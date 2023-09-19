@@ -1,0 +1,53 @@
+--------------------ç\ê¨: studio - Win32 Debug--------------------
+Begining build with project "C:\home\src\suikastudio\win\studio\studio.dsp", at root.
+Active configuration is Win32 (x86) Application (based on Win32 (x86) Application)
+
+Project's tools are:
+			"32-bit C/C++ Compiler for 80x86" with flags "/nologo /Zp4 /MDd /W4 /Gm /GX /Zi /Od /I ".\\" /I "..\\" /I "..\..\\" /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_AFXDLL" /Fo"Debug/" /Fd"Debug/" /FD /c "
+			"OLE Type Library Maker" with flags "/nologo /D "_DEBUG" /mktyplib203 /o NUL /win32 "
+			"Win32 Resource Compiler" with flags "/l 0x411 /fo"Debug/resource.res" /d "_DEBUG" /d "_AFXDLL" "
+			"Browser Database Maker" with flags "/nologo /o"Debug/studio.bsc" "
+			"COFF Linker for 80x86" with flags "ole32.lib /nologo /subsystem:windows /incremental:yes /pdb:"Debug/studio.pdb" /debug /machine:I386 /out:"Debug/studio.exe" /pdbtype:sept "
+			"∂Ω¿— ÀﬁŸƒﬁ" with flags ""
+			"<Component 0xa>" with flags ""
+
+Creating temp file "C:\WINDOWS\TEMP\RSP301.TMP" with contents </nologo /Zp4 /MDd /W4 /Gm /GX /Zi /Od /I ".\\" /I "..\\" /I "..\..\\" /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_AFXDLL" /Fo"Debug/" /Fd"Debug/" /FD /c 
+"C:\home\src\suikastudio\win\studio\MainWindow.cpp"
+>
+Creating command line "cl.exe @C:\WINDOWS\TEMP\RSP301.TMP" 
+Creating temp file "C:\WINDOWS\TEMP\RSP0302.TMP" with contents <ole32.lib /nologo /subsystem:windows /incremental:yes /pdb:"Debug/studio.pdb" /debug /machine:I386 /out:"Debug/studio.exe" /pdbtype:sept 
+.\Debug\alphatable.obj
+.\Debug\edgescanner.obj
+.\Debug\graphiccontext.obj
+.\Debug\image_draw.obj
+.\Debug\image_init.obj
+.\Debug\image_load.obj
+.\Debug\image_transfer.obj
+.\Debug\io.obj
+.\Debug\string.obj
+.\Debug\KRuntimeEnv.obj
+.\Debug\KSceneDoc.obj
+.\Debug\KSceneView_drag.obj
+.\Debug\KSceneView_draw.obj
+.\Debug\KSceneView_edit.obj
+.\Debug\KSceneView_init.obj
+.\Debug\KSceneView_key.obj
+.\Debug\App.obj
+.\Debug\DebugToolbar.obj
+.\Debug\EditToolbar.obj
+.\Debug\KRuntimeEnvWin32.obj
+.\Debug\MainWindow.obj
+.\Debug\MainWindow_debug.obj
+.\Debug\SceneView.obj
+.\Debug\SuikaButton.obj
+.\Debug\EditCheckVarDlg.obj
+.\Debug\EditMsgDlg.obj
+.\Debug\resource.res>
+Creating command line "link.exe @C:\WINDOWS\TEMP\RSP0302.TMP" 
+∫› ﬂ≤ŸíÜ...
+MainWindow.cpp
+ÿ›∏íÜ...
+
+
+
+studio.exe - ¥◊∞ 0ÅAåxçê 0

@@ -1,0 +1,3009 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 日本語 resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_JPN)
+#ifdef _WIN32
+LANGUAGE LANG_JAPANESE, SUBLANG_DEFAULT
+#pragma code_page(932)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_EDITMSG DIALOG DISCARDABLE  0, 0, 255, 215
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "文章を表示する"
+FONT 9, "ＭＳ Ｐゴシック"
+BEGIN
+    COMBOBOX        IDC_CBSPEAKER,33,7,101,30,CBS_DROPDOWN | CBS_AUTOHSCROLL | 
+                    CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_EDITVOICE,33,28,101,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "参照",IDC_BTNREF,138,28,23,14,WS_DISABLED
+    EDITTEXT        IDC_EDITMSG,33,50,215,110,ES_MULTILINE | ES_AUTOVSCROLL | 
+                    ES_WANTRETURN | WS_VSCROLL
+    DEFPUSHBUTTON   "OK",IDOK,142,194,50,14
+    PUSHBUTTON      "ｷｬﾝｾﾙ",IDCANCEL,198,194,50,14
+    LTEXT           "話者:",IDC_STATIC,7,10,16,8
+    LTEXT           "ボイス:",IDC_STATIC,7,31,20,8
+    LTEXT           "文章:",IDC_STATIC,7,52,16,8
+    LTEXT           "←空欄ならナレーションになります",IDC_STATIC,138,11,100,
+                    8
+    LTEXT           "←空欄でもOKです",IDC_STATIC,167,31,55,8
+    LTEXT           "Tab/Tab+Shiftで移動できます。",IDC_STATIC,7,200,93,8
+    LTEXT           "出力先メッセージボックス番号:",IDC_STATIC,7,173,90,8
+    COMBOBOX        IDC_CBMSGBOX,97,171,48,90,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+END
+
+IDD_EDITCHECKVAR DIALOG DISCARDABLE  0, 0, 277, 161
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "変数の値を判定する"
+FONT 9, "ＭＳ Ｐゴシック"
+BEGIN
+    COMBOBOX        IDC_CBVAR,7,18,97,46,CBS_DROPDOWN | CBS_AUTOHSCROLL | 
+                    CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_CBCONDITION,121,18,36,115,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_CBVALUE,173,18,97,47,CBS_DROPDOWN | CBS_AUTOHSCROLL | 
+                    CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    DEFPUSHBUTTON   "OK",IDOK,166,140,50,14
+    PUSHBUTTON      "ｷｬﾝｾﾙ",IDCANCEL,220,140,50,14
+    LTEXT           "判定する変数:",IDC_STATIC,7,7,42,8
+    LTEXT           "条件:",IDC_STATIC,121,7,16,8
+    LTEXT           "基準値:",IDC_STATIC,173,7,23,8
+    LTEXT           "↑変数名を選んでください",IDC_STATIC,7,36,76,8
+    LTEXT           "↑変数名か数値，文字列を指定してください。",IDC_STATIC,
+                    173,36,97,22
+    GROUPBOX        "基準値の指定の仕方",IDC_STATIC,7,61,263,69
+    LTEXT           "・「基準値」の文字列は半角のダブルクォーテーション("")で囲ってください。\n\n・「判定する変数」が文字列変数の場合，「条件」には＝，≠しか使えません。\n\n・「判定する変数」と「基準値」で値の種類（数値，文字列）が異なると，エラーになります。",
+                    IDC_STATIC,13,78,252,45
+END
+
+IDD_EDITLAYERCTRL DIALOG DISCARDABLE  0, 0, 331, 321
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "レイヤー操作"
+FONT 9, "ＭＳ Ｐゴシック"
+BEGIN
+    COMBOBOX        IDC_COMBO1,63,6,139,308,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    EDITTEXT        IDC_EDIT21,76,33,40,14,ES_RIGHT | ES_NUMBER
+    COMBOBOX        IDC_COMBO3,50,73,29,248,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    COMBOBOX        IDC_COMBO4,91,93,29,248,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    COMBOBOX        IDC_COMBO5,131,93,29,248,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    COMBOBOX        IDC_COMBO6,170,93,29,248,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    COMBOBOX        IDC_COMBO7,209,93,29,248,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    EDITTEXT        IDC_EDIT13,64,161,27,14,ES_RIGHT | ES_NUMBER
+    EDITTEXT        IDC_EDIT14,115,161,27,14,ES_RIGHT | ES_NUMBER
+    EDITTEXT        IDC_EDIT10,213,161,27,14,ES_RIGHT | ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    EDITTEXT        IDC_EDIT11,265,161,27,14,ES_RIGHT | ES_NUMBER
+    EDITTEXT        IDC_EDIT12,42,185,29,14,ES_RIGHT | ES_NUMBER
+    EDITTEXT        IDC_EDIT2,64,236,27,14,ES_RIGHT | ES_NUMBER | 
+                    WS_DISABLED
+    EDITTEXT        IDC_EDIT3,115,236,27,14,ES_RIGHT | ES_NUMBER | 
+                    WS_DISABLED
+    EDITTEXT        IDC_EDIT4,227,236,27,14,ES_RIGHT | ES_NUMBER | 
+                    WS_DISABLED
+    EDITTEXT        IDC_EDIT5,279,236,27,14,ES_RIGHT | ES_NUMBER | 
+                    WS_DISABLED
+    EDITTEXT        IDC_EDIT6,64,261,27,14,ES_RIGHT | ES_NUMBER | 
+                    WS_DISABLED
+    EDITTEXT        IDC_EDIT7,115,261,27,14,ES_RIGHT | ES_NUMBER | 
+                    WS_DISABLED
+    EDITTEXT        IDC_EDIT8,227,261,27,14,ES_RIGHT | ES_NUMBER | 
+                    WS_DISABLED
+    EDITTEXT        IDC_EDIT9,279,261,27,14,ES_RIGHT | ES_NUMBER | 
+                    WS_DISABLED
+    PUSHBUTTON      "ｷｬﾝｾﾙ",IDCANCEL,274,300,50,14
+    DEFPUSHBUTTON   "OK",IDOK,217,300,50,14
+    CONTROL         "自由変形を使う",IDC_CHECK1,"Button",BS_AUTOCHECKBOX | 
+                    BS_NOTIFY | WS_TABSTOP,15,218,61,10
+    LTEXT           "左上座標: ( X = ",IDC_STATIC,15,239,48,8,WS_DISABLED
+    CONTROL         "相対的な値で指定する",IDC_CHECK2,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,15,142,82,10
+    LTEXT           ",  Y = ",IDC_STATIC,95,239,19,8,WS_DISABLED
+    LTEXT           ")",IDC_STATIC,146,239,8,8,WS_DISABLED
+    LTEXT           "右上座標: ( X = ",IDC_STATIC,178,239,48,8,WS_DISABLED
+    LTEXT           ",  Y = ",IDC_STATIC,258,239,19,8,WS_DISABLED
+    LTEXT           ")",IDC_STATIC,309,239,8,8,WS_DISABLED
+    LTEXT           "左下座標: ( X = ",IDC_STATIC,15,264,48,8,WS_DISABLED
+    LTEXT           ",  Y = ",IDC_STATIC,95,264,19,8,WS_DISABLED
+    LTEXT           ")",IDC_STATIC,146,264,8,8,WS_DISABLED
+    LTEXT           "右下座標: ( X = ",IDC_STATIC,178,264,48,8,WS_DISABLED
+    LTEXT           ",  Y = ",IDC_STATIC,258,264,19,8,WS_DISABLED
+    LTEXT           ")",IDC_STATIC,309,264,8,8,WS_DISABLED
+    LTEXT           "拡大率(%): ( X = ",IDC_STATIC,163,164,50,8
+    LTEXT           ",  Y = ",IDC_STATIC,245,164,19,8
+    LTEXT           ")",IDC_STATIC,295,164,8,8
+    LTEXT           "回転度:",IDC_STATIC,15,187,23,8
+    LTEXT           "°（時計回り）",IDC_STATIC,74,187,40,8
+    LTEXT           "左上座標: ( X = ",IDC_STATIC,15,164,48,8
+    LTEXT           ",  Y = ",IDC_STATIC,95,164,19,8
+    LTEXT           ")",IDC_STATIC,147,164,8,8
+    LTEXT           "塗りつぶし: (R,G,B,A) = (",IDC_STATIC,18,96,71,8
+    LTEXT           ",",IDC_STATIC,123,95,8,8
+    LTEXT           ",",IDC_STATIC,162,95,8,8
+    LTEXT           ",",IDC_STATIC,201,95,8,8
+    LTEXT           ")",IDC_STATIC,241,96,37,8
+    LTEXT           "不透明度:",IDC_STATIC,18,76,30,8
+    LTEXT           "この操作にかける時間:",IDC_STATIC,7,36,67,8
+    LTEXT           "[ミリ秒]",IDC_STATIC,120,37,22,8
+    GROUPBOX        "色の操作",IDC_STATIC,7,62,317,52
+    GROUPBOX        "変形操作",IDC_STATIC,7,128,317,162
+    LTEXT           "操作するレイヤー:",IDC_STATIC,7,9,54,8
+END
+
+IDD_EDITLAYERIMAGE DIALOG DISCARDABLE  0, 0, 234, 177
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "レイヤーに画像をセットする"
+FONT 9, "ＭＳ Ｐゴシック"
+BEGIN
+    EDITTEXT        IDC_EDIT1,50,38,139,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "参照",IDC_BUTTON1,194,38,33,14,WS_DISABLED
+    EDITTEXT        IDC_EDIT22,50,80,139,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "参照",IDC_BUTTON2,194,80,33,14,WS_DISABLED
+    DEFPUSHBUTTON   "OK",IDOK,122,156,50,14
+    PUSHBUTTON      "ｷｬﾝｾﾙ",IDCANCEL,177,156,50,14
+    LTEXT           "カラー画像:",IDC_STATIC,7,40,34,8
+    LTEXT           "↑指定しなければレイヤーから画像を削除します。",
+                    IDC_STATIC,55,58,172,8
+    LTEXT           "アルファ画像:",IDC_STATIC,7,82,40,8
+    LTEXT           "↑カラー画像と同サイズのグレースケールBMPを指定してください。\n※AUTOと指定すればカラー画像の左上の色を透過色とするマスクが生成されます。\n※指定しなければ透過処理を施しません。",
+                    IDC_STATIC,55,100,172,42
+    LTEXT           "レイヤー:",IDC_STATIC,7,9,27,8
+    COMBOBOX        IDC_COMBO1,50,7,139,308,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// 24
+//
+
+CREATEPROCESS_MANIFEST_RESOURCE_ID 24      MOVEABLE PURE   "resource\\SceneEdit.exe.manifest"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_ACCELERATOR ACCELERATORS DISCARDABLE 
+BEGIN
+    "C",            ID_EDIT_COPY,           VIRTKEY, CONTROL, NOINVERT
+    "D",            ID_STARTDEBUG_CUR,      VIRTKEY, ALT, NOINVERT
+    "S",            ID_FILE_SAVE,           VIRTKEY, CONTROL, NOINVERT
+    "S",            ID_STARTDEBUG,          VIRTKEY, ALT, NOINVERT
+    "V",            ID_EDIT_PASTE,          VIRTKEY, CONTROL, NOINVERT
+    VK_RETURN,      ID_CHANGESCREENMODE,    VIRTKEY, ALT, NOINVERT
+    "X",            ID_EDIT_CUT,            VIRTKEY, CONTROL, NOINVERT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+SCENEVIEW_LINE.BMP      BITMAP  DISCARDABLE     "..\\..\\common\\res\\line.bmp"
+SCENEVIEW_ICONS.BMP     BITMAP  DISCARDABLE     "..\\..\\common\\res\\icons.bmp"
+IDB_SCENEVIEWPAD        BITMAP  DISCARDABLE     "..\\..\\common\\res\\sceneviewpad.bmp"
+IDB_FRAME               BITMAP  DISCARDABLE     "..\\..\\common\\res\\frame.bmp"
+IDB_BTNINSERT           BITMAP  DISCARDABLE     "..\\..\\common\\res\\btninsert.bmp"
+IDB_DEBUG_ENDRETURN     BITMAP  DISCARDABLE     "..\\..\\common\\res\\debugendreturn.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Cursor
+//
+
+IDC_DRAGCURSOR          CURSOR  DISCARDABLE     "resource\\dragcursor.cur"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_SCENEEDIT           ICON    DISCARDABLE     "resource\\suika.ico"
+IDI_ICON                ICON    DISCARDABLE     "resource\\icon.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINMENU MENU DISCARDABLE 
+BEGIN
+    POPUP "ファイル(&F)"
+    BEGIN
+        MENUITEM "新規作成(&N)",                ID_FILE_NEW
+        MENUITEM "開く(&O)",                    ID_FILE_OPEN
+        MENUITEM "閉じる(&C)",                  ID_FILE_CLOSE
+        MENUITEM SEPARATOR
+        MENUITEM "保存する(&S)\tCtrl+S",        ID_FILE_SAVE
+        MENUITEM "名前を付けて保存する(&A)",    ID_FILE_SAVEAS
+        MENUITEM SEPARATOR
+        MENUITEM "アプリケーションの終了(&X)",  ID_APP_EXIT
+    END
+    POPUP "編集(&E)"
+    BEGIN
+        MENUITEM "コピー(&C)\tCtrl+C",          57634
+        MENUITEM "切り取り(&X)\tCtrl+X",        57635
+        MENUITEM "貼り付け(&P)\tCtrl+V",        57637
+        MENUITEM SEPARATOR
+        MENUITEM "元に戻す(&Z)\tCtrl+Z",        ID_MENUITEM40024
+    END
+    POPUP "デバッグ(&D)"
+    BEGIN
+        POPUP "実行を開始する(&S)"
+        BEGIN
+            MENUITEM """start.scn"" ファイルから始める(&S)\tAlt+S", 32830
+            MENUITEM "カーソル行から始める(&C)\tAlt+D", ID_DEBUG_START_CUR
+        END
+        POPUP "オプション(&O)"
+        BEGIN
+            MENUITEM "ゲームフォルダを選択する(&F)", ID_DEBUG_SELROOT
+        END
+    END
+    POPUP "ツール(&T)"
+    BEGIN
+        MENUITEM "変数エディタ(&V)\tAlt+V",     32816
+        MENUITEM "キャラ名エディタ(&C)\tAlt+C", 32826
+        MENUITEM SEPARATOR
+        POPUP "フォルダを開く(&F)"
+        BEGIN
+            MENUITEM "シーン(&S)",                  32817
+            MENUITEM "画像(&I)",                    32818
+            MENUITEM "サウンド(&M)",                32819
+        END
+        MENUITEM SEPARATOR
+        POPUP "ファイルタイプの登録(&T)"
+        BEGIN
+            MENUITEM "登録する(&R)",                32824
+            MENUITEM "登録を削除する(&U)",          32825
+        END
+    END
+END
+
+IDR_SCENEVIEWMENU MENU DISCARDABLE 
+BEGIN
+    POPUP "選択有り"
+    BEGIN
+        MENUITEM "命令を編集する",              ID_EDITINSTR
+        MENUITEM SEPARATOR
+        MENUITEM "コピー\tCtrl+C",              ID_COPY
+        MENUITEM "切り取り\tCtrl+X",            ID_CUT
+        MENUITEM "貼り付け\tCtrl+V",            ID_PASTE
+    END
+    POPUP "選択無し"
+    BEGIN
+        MENUITEM "命令を挿入する",              ID_MENUITEM40001
+        MENUITEM SEPARATOR
+        MENUITEM "貼り付け\tCtrl+V",            ID_PASTE
+    END
+END
+
+IDR_TYPEBOXMENU MENU DISCARDABLE 
+BEGIN
+    POPUP "dummy"
+    BEGIN
+        POPUP "メッセージ"
+        BEGIN
+            MENUITEM "メッセージの表示\tM",         ID_INSERT_MSG
+            MENUITEM "選択肢の表示\tS",             ID_INSERT_INSTR_SELECT
+            MENUITEM SEPARATOR
+            POPUP "メッセージボックスの設定"
+            BEGIN
+                MENUITEM "メッセージボックスの追加",    ID_MENUITEM40010
+                MENUITEM "クリック待ちの有無の設定",    ID_MENUITEM40014
+                MENUITEM "フォントの変更",              ID_MENUITEM40012
+            END
+        END
+        POPUP "画像の表示"
+        BEGIN
+            MENUITEM "背景を表示する\tB",           ID_INSERT_INSTR_BKGRND
+            MENUITEM "キャラを表示する\tC",         ID_INSERT_INSTR_CHARA
+            MENUITEM SEPARATOR
+            POPUP "レイヤー操作"
+            BEGIN
+                MENUITEM "レイヤーに画像をセットする",  ID_MENUITEM40019
+                MENUITEM "レイヤーの画像を操作する",    ID_MENUITEM40020
+            END
+        END
+        POPUP "サウンド"
+        BEGIN
+            MENUITEM "サウンドの再生(P)",           ID_INSERT_INSTR_SOUND
+            MENUITEM "ボリュームの調節",            ID_MENUITEM40016
+        END
+        POPUP "シナリオ分岐"
+        BEGIN
+            MENUITEM "シーンファイルの呼び出し(I)", ID_INSERT_INSTR_CALL
+            MENUITEM SEPARATOR
+            MENUITEM "変数の値のセット(V)",         ID_INSERT_INSTR_SETVAR
+            MENUITEM "変数の値の判定(J)",           ID_INSERT_CHECKVAR
+            MENUITEM SEPARATOR
+            MENUITEM "ループの挿入(L)",             ID_INSERT_INSTR_LOOP
+            MENUITEM "ループからの抜け出し(O)",     ID_INSERT_INSTR_BREAK
+        END
+        POPUP "システム操作"
+        BEGIN
+            MENUITEM "クリックを待つ",              ID_MENUITEM32837
+            MENUITEM "クリックの有効・無効を設定する", ID_INSERT_INSTR_CLICK
+            MENUITEM "指定時間待つ",                ID_MENUITEM32839
+            MENUITEM "セーブを行う",                ID_MENUITEM32835
+            MENUITEM "ロードを行う",                ID_MENUITEM32836
+        END
+        POPUP "その他"
+        BEGIN
+            MENUITEM "コメント(@)",                 ID_INSERT_INSTR_COMMENT
+        END
+    END
+END
+
+IDR_PLAYERMENU MENUEX DISCARDABLE 
+BEGIN
+    POPUP "ファイル(&F)",                   65535,MFT_STRING,MFS_ENABLED
+    BEGIN
+        MENUITEM "終了(&Q)",                    40002,MFT_STRING,MFS_ENABLED
+    END
+    MENUITEM "スクリーンモード変更(&S)",    40001,
+    MFT_STRING | MFT_RIGHTORDER | MFT_RIGHTJUSTIFY,MFS_ENABLED
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "041104b0"
+        BEGIN
+            VALUE "Comments", "Thank you for your downloading this preview version of Suika Studio!\0"
+            VALUE "CompanyName", "LuxionSoft\0"
+            VALUE "FileDescription", "西瓜 Studio シーンエディタ\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "SceneEdit\0"
+            VALUE "LegalCopyright", "Copyright (C) 2002-2003, TABATA Keiichi/LuxionSoft.\0"
+            VALUE "OriginalFilename", "SceneEdit.EXE\0"
+            VALUE "ProductName", "西瓜 Studio シーンエディタ\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x411, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_EDITMSG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 248
+        VERTGUIDE, 33
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 208
+    END
+
+    IDD_EDITCHECKVAR, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 270
+        VERTGUIDE, 121
+        VERTGUIDE, 173
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 154
+        HORZGUIDE, 18
+    END
+
+    IDD_EDITLAYERCTRL, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 324
+        VERTGUIDE, 15
+        TOPMARGIN, 6
+        BOTTOMMARGIN, 314
+        HORZGUIDE, 93
+    END
+
+    IDD_EDITLAYERIMAGE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 227
+        VERTGUIDE, 50
+        VERTGUIDE, 189
+        VERTGUIDE, 194
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 170
+        HORZGUIDE, 38
+        HORZGUIDE, 80
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_EDITMSG DLGINIT
+BEGIN
+    IDC_CBMSGBOX, 0x403, 10, 0
+0x3020, 0x2820, 0x5795, 0x808f, 0x0029, 
+    IDC_CBMSGBOX, 0x403, 3, 0
+0x3120, "\000" 
+    IDC_CBMSGBOX, 0x403, 3, 0
+0x3220, "\000" 
+    IDC_CBMSGBOX, 0x403, 3, 0
+0x3320, "\000" 
+    IDC_CBMSGBOX, 0x403, 3, 0
+0x3420, "\000" 
+    IDC_CBMSGBOX, 0x403, 3, 0
+0x3520, "\000" 
+    IDC_CBMSGBOX, 0x403, 3, 0
+0x3620, "\000" 
+    IDC_CBMSGBOX, 0x403, 3, 0
+0x3720, "\000" 
+    0
+END
+
+IDD_EDITLAYERCTRL DLGINIT
+BEGIN
+    IDC_COMBO1, 0x403, 2, 0
+0x0030, 
+    IDC_COMBO1, 0x403, 2, 0
+0x0031, 
+    IDC_COMBO1, 0x403, 2, 0
+0x0032, 
+    IDC_COMBO1, 0x403, 2, 0
+0x0033, 
+    IDC_COMBO1, 0x403, 2, 0
+0x0034, 
+    IDC_COMBO1, 0x403, 2, 0
+0x0035, 
+    IDC_COMBO1, 0x403, 2, 0
+0x0036, 
+    IDC_COMBO1, 0x403, 2, 0
+0x0037, 
+    IDC_COMBO1, 0x403, 23, 0
+0x2038, 0x8320, 0x8381, 0x8362, 0x815a, 0x835b, 0x8357, 0x837b, 0x8362, 
+0x834e, 0x3058, "\000" 
+    IDC_COMBO1, 0x403, 23, 0
+0x2039, 0x8320, 0x8381, 0x8362, 0x815a, 0x835b, 0x8357, 0x837b, 0x8362, 
+0x834e, 0x3158, "\000" 
+    IDC_COMBO1, 0x403, 23, 0
+0x3031, 0x8320, 0x8381, 0x8362, 0x815a, 0x835b, 0x8357, 0x837b, 0x8362, 
+0x834e, 0x3258, "\000" 
+    IDC_COMBO1, 0x403, 23, 0
+0x3131, 0x8320, 0x8381, 0x8362, 0x815a, 0x835b, 0x8357, 0x837b, 0x8362, 
+0x834e, 0x3358, "\000" 
+    IDC_COMBO1, 0x403, 23, 0
+0x3231, 0x8320, 0x8381, 0x8362, 0x815a, 0x835b, 0x8357, 0x837b, 0x8362, 
+0x834e, 0x3458, "\000" 
+    IDC_COMBO1, 0x403, 23, 0
+0x3331, 0x8320, 0x8381, 0x8362, 0x815a, 0x835b, 0x8357, 0x837b, 0x8362, 
+0x834e, 0x3558, "\000" 
+    IDC_COMBO1, 0x403, 23, 0
+0x3431, 0x8320, 0x8381, 0x8362, 0x815a, 0x835b, 0x8357, 0x837b, 0x8362, 
+0x834e, 0x3658, "\000" 
+    IDC_COMBO1, 0x403, 23, 0
+0x3531, 0x8320, 0x8381, 0x8362, 0x815a, 0x835b, 0x8357, 0x837b, 0x8362, 
+0x834e, 0x3758, "\000" 
+    IDC_COMBO1, 0x403, 3, 0
+0x3631, "\000" 
+    IDC_COMBO1, 0x403, 3, 0
+0x3731, "\000" 
+    IDC_COMBO1, 0x403, 3, 0
+0x3831, "\000" 
+    IDC_COMBO1, 0x403, 3, 0
+0x3931, "\000" 
+    IDC_COMBO1, 0x403, 3, 0
+0x3032, "\000" 
+    IDC_COMBO1, 0x403, 3, 0
+0x3132, "\000" 
+    IDC_COMBO1, 0x403, 3, 0
+0x3232, "\000" 
+    IDC_COMBO1, 0x403, 3, 0
+0x3332, "\000" 
+    IDC_COMBO1, 0x403, 3, 0
+0x3432, "\000" 
+    IDC_COMBO1, 0x403, 14, 0
+0x3532, 0x2020, 0x2820, 0xda96, 0x7083, 0x6083, 0x0029, 
+    IDC_COMBO1, 0x403, 14, 0
+0x3632, 0x2020, 0x2820, 0xfb8c, 0x7083, 0x4e83, 0x0029, 
+    IDC_COMBO1, 0x403, 14, 0
+0x3732, 0x9220, 0x8986, 0x839b, 0x834c, 0x8383, 0x0089, 
+    IDC_COMBO1, 0x403, 22, 0
+0x3832, 0x2020, 0x2820, 0x4e83, 0x8d83, 0x5883, 0x7483, 0x4683, 0x5b81, 
+0x6883, 0x0029, 
+    IDC_COMBO1, 0x403, 3, 0
+0x3932, "\000" 
+    IDC_COMBO1, 0x403, 14, 0
+0x3033, 0x2020, 0x2820, 0xda96, 0x7083, 0x6083, 0x0029, 
+    IDC_COMBO1, 0x403, 14, 0
+0x3133, 0x2020, 0x2820, 0xfb8c, 0x7083, 0x4e83, 0x0029, 
+    IDC_COMBO1, 0x403, 12, 0
+0x3233, 0x8d20, 0x83b6, 0x834c, 0x8383, 0x0089, 
+    IDC_COMBO1, 0x403, 22, 0
+0x3333, 0x2020, 0x2820, 0x4e83, 0x8d83, 0x5883, 0x7483, 0x4683, 0x5b81, 
+0x6883, 0x0029, 
+    IDC_COMBO1, 0x403, 3, 0
+0x3433, "\000" 
+    IDC_COMBO1, 0x403, 14, 0
+0x3533, 0x2020, 0x2820, 0xda96, 0x7083, 0x6083, 0x0029, 
+    IDC_COMBO1, 0x403, 14, 0
+0x3633, 0x2020, 0x2820, 0xfb8c, 0x7083, 0x4e83, 0x0029, 
+    IDC_COMBO1, 0x403, 12, 0
+0x3733, 0x8920, 0x8345, 0x834c, 0x8383, 0x0089, 
+    IDC_COMBO1, 0x403, 22, 0
+0x3833, 0x2020, 0x2820, 0x4e83, 0x8d83, 0x5883, 0x7483, 0x4683, 0x5b81, 
+0x6883, 0x0029, 
+    IDC_COMBO1, 0x403, 3, 0
+0x3933, "\000" 
+    IDC_COMBO1, 0x403, 3, 0
+0x3034, "\000" 
+    IDC_COMBO1, 0x403, 3, 0
+0x3134, "\000" 
+    IDC_COMBO1, 0x403, 3, 0
+0x3234, "\000" 
+    IDC_COMBO1, 0x403, 3, 0
+0x3334, "\000" 
+    IDC_COMBO1, 0x403, 8, 0
+0x3434, 0x9420, 0x8c77, 0x0069, 
+    IDC_COMBO1, 0x403, 3, 0
+0x3534, "\000" 
+    IDC_COMBO1, 0x403, 3, 0
+0x3634, "\000" 
+    IDC_COMBO1, 0x403, 3, 0
+0x3734, "\000" 
+    IDC_COMBO1, 0x403, 3, 0
+0x3834, "\000" 
+    IDC_COMBO3, 0x403, 5, 0
+0x3031, 0x2530, "\000" 
+    IDC_COMBO3, 0x403, 4, 0
+0x3939, 0x0025, 
+    IDC_COMBO3, 0x403, 4, 0
+0x3839, 0x0025, 
+    IDC_COMBO3, 0x403, 4, 0
+0x3739, 0x0025, 
+    IDC_COMBO3, 0x403, 4, 0
+0x3639, 0x0025, 
+    IDC_COMBO3, 0x403, 4, 0
+0x3539, 0x0025, 
+    IDC_COMBO3, 0x403, 4, 0
+0x3439, 0x0025, 
+    IDC_COMBO3, 0x403, 4, 0
+0x3339, 0x0025, 
+    IDC_COMBO3, 0x403, 4, 0
+0x3239, 0x0025, 
+    IDC_COMBO3, 0x403, 4, 0
+0x3139, 0x0025, 
+    IDC_COMBO3, 0x403, 4, 0
+0x3039, 0x0025, 
+    IDC_COMBO3, 0x403, 4, 0
+0x3938, 0x0025, 
+    IDC_COMBO3, 0x403, 4, 0
+0x3838, 0x0025, 
+    IDC_COMBO3, 0x403, 4, 0
+0x3738, 0x0025, 
+    IDC_COMBO3, 0x403, 4, 0
+0x3638, 0x0025, 
+    IDC_COMBO3, 0x403, 4, 0
+0x3538, 0x0025, 
+    IDC_COMBO3, 0x403, 4, 0
+0x3438, 0x0025, 
+    IDC_COMBO3, 0x403, 4, 0
+0x3338, 0x0025, 
+    IDC_COMBO3, 0x403, 4, 0
+0x3238, 0x0025, 
+    IDC_COMBO3, 0x403, 4, 0
+0x3138, 0x0025, 
+    IDC_COMBO3, 0x403, 4, 0
+0x3038, 0x0025, 
+    IDC_COMBO3, 0x403, 4, 0
+0x3937, 0x0025, 
+    IDC_COMBO3, 0x403, 4, 0
+0x3837, 0x0025, 
+    IDC_COMBO3, 0x403, 4, 0
+0x3737, 0x0025, 
+    IDC_COMBO3, 0x403, 4, 0
+0x3637, 0x0025, 
+    IDC_COMBO3, 0x403, 4, 0
+0x3537, 0x0025, 
+    IDC_COMBO3, 0x403, 4, 0
+0x3437, 0x0025, 
+    IDC_COMBO3, 0x403, 4, 0
+0x3337, 0x0025, 
+    IDC_COMBO3, 0x403, 4, 0
+0x3237, 0x0025, 
+    IDC_COMBO3, 0x403, 4, 0
+0x3137, 0x0025, 
+    IDC_COMBO3, 0x403, 4, 0
+0x3037, 0x0025, 
+    IDC_COMBO3, 0x403, 4, 0
+0x3936, 0x0025, 
+    IDC_COMBO3, 0x403, 4, 0
+0x3836, 0x0025, 
+    IDC_COMBO3, 0x403, 4, 0
+0x3736, 0x0025, 
+    IDC_COMBO3, 0x403, 4, 0
+0x3636, 0x0025, 
+    IDC_COMBO3, 0x403, 4, 0
+0x3536, 0x0025, 
+    IDC_COMBO3, 0x403, 4, 0
+0x3436, 0x0025, 
+    IDC_COMBO3, 0x403, 4, 0
+0x3336, 0x0025, 
+    IDC_COMBO3, 0x403, 4, 0
+0x3236, 0x0025, 
+    IDC_COMBO3, 0x403, 4, 0
+0x3136, 0x0025, 
+    IDC_COMBO3, 0x403, 4, 0
+0x3036, 0x0025, 
+    IDC_COMBO3, 0x403, 4, 0
+0x3935, 0x0025, 
+    IDC_COMBO3, 0x403, 4, 0
+0x3835, 0x0025, 
+    IDC_COMBO3, 0x403, 4, 0
+0x3735, 0x0025, 
+    IDC_COMBO3, 0x403, 4, 0
+0x3635, 0x0025, 
+    IDC_COMBO3, 0x403, 4, 0
+0x3535, 0x0025, 
+    IDC_COMBO3, 0x403, 4, 0
+0x3435, 0x0025, 
+    IDC_COMBO3, 0x403, 4, 0
+0x3335, 0x0025, 
+    IDC_COMBO3, 0x403, 4, 0
+0x3235, 0x0025, 
+    IDC_COMBO3, 0x403, 4, 0
+0x3135, 0x0025, 
+    IDC_COMBO3, 0x403, 4, 0
+0x3035, 0x0025, 
+    IDC_COMBO3, 0x403, 4, 0
+0x3934, 0x0025, 
+    IDC_COMBO3, 0x403, 4, 0
+0x3834, 0x0025, 
+    IDC_COMBO3, 0x403, 4, 0
+0x3734, 0x0025, 
+    IDC_COMBO3, 0x403, 4, 0
+0x3634, 0x0025, 
+    IDC_COMBO3, 0x403, 4, 0
+0x3534, 0x0025, 
+    IDC_COMBO3, 0x403, 4, 0
+0x3434, 0x0025, 
+    IDC_COMBO3, 0x403, 4, 0
+0x3334, 0x0025, 
+    IDC_COMBO3, 0x403, 4, 0
+0x3234, 0x0025, 
+    IDC_COMBO3, 0x403, 4, 0
+0x3134, 0x0025, 
+    IDC_COMBO3, 0x403, 4, 0
+0x3034, 0x0025, 
+    IDC_COMBO3, 0x403, 4, 0
+0x3933, 0x0025, 
+    IDC_COMBO3, 0x403, 4, 0
+0x3833, 0x0025, 
+    IDC_COMBO3, 0x403, 4, 0
+0x3733, 0x0025, 
+    IDC_COMBO3, 0x403, 4, 0
+0x3633, 0x0025, 
+    IDC_COMBO3, 0x403, 4, 0
+0x3533, 0x0025, 
+    IDC_COMBO3, 0x403, 4, 0
+0x3433, 0x0025, 
+    IDC_COMBO3, 0x403, 4, 0
+0x3333, 0x0025, 
+    IDC_COMBO3, 0x403, 4, 0
+0x3233, 0x0025, 
+    IDC_COMBO3, 0x403, 4, 0
+0x3133, 0x0025, 
+    IDC_COMBO3, 0x403, 4, 0
+0x3033, 0x0025, 
+    IDC_COMBO3, 0x403, 4, 0
+0x3932, 0x0025, 
+    IDC_COMBO3, 0x403, 4, 0
+0x3732, 0x0025, 
+    IDC_COMBO3, 0x403, 4, 0
+0x3632, 0x0025, 
+    IDC_COMBO3, 0x403, 4, 0
+0x3532, 0x0025, 
+    IDC_COMBO3, 0x403, 4, 0
+0x3432, 0x0025, 
+    IDC_COMBO3, 0x403, 4, 0
+0x3332, 0x0025, 
+    IDC_COMBO3, 0x403, 4, 0
+0x3232, 0x0025, 
+    IDC_COMBO3, 0x403, 4, 0
+0x3132, 0x0025, 
+    IDC_COMBO3, 0x403, 4, 0
+0x3032, 0x0025, 
+    IDC_COMBO3, 0x403, 4, 0
+0x3931, 0x0025, 
+    IDC_COMBO3, 0x403, 4, 0
+0x3831, 0x0025, 
+    IDC_COMBO3, 0x403, 4, 0
+0x3731, 0x0025, 
+    IDC_COMBO3, 0x403, 4, 0
+0x3631, 0x0025, 
+    IDC_COMBO3, 0x403, 4, 0
+0x3531, 0x0025, 
+    IDC_COMBO3, 0x403, 4, 0
+0x3431, 0x0025, 
+    IDC_COMBO3, 0x403, 4, 0
+0x3331, 0x0025, 
+    IDC_COMBO3, 0x403, 4, 0
+0x3231, 0x0025, 
+    IDC_COMBO3, 0x403, 4, 0
+0x3131, 0x0025, 
+    IDC_COMBO3, 0x403, 4, 0
+0x3031, 0x0025, 
+    IDC_COMBO3, 0x403, 3, 0
+0x2539, "\000" 
+    IDC_COMBO3, 0x403, 3, 0
+0x2538, "\000" 
+    IDC_COMBO3, 0x403, 3, 0
+0x2537, "\000" 
+    IDC_COMBO3, 0x403, 3, 0
+0x2536, "\000" 
+    IDC_COMBO3, 0x403, 3, 0
+0x2535, "\000" 
+    IDC_COMBO3, 0x403, 3, 0
+0x2534, "\000" 
+    IDC_COMBO3, 0x403, 3, 0
+0x2533, "\000" 
+    IDC_COMBO3, 0x403, 3, 0
+0x2532, "\000" 
+    IDC_COMBO3, 0x403, 3, 0
+0x2531, "\000" 
+    IDC_COMBO3, 0x403, 3, 0
+0x2530, "\000" 
+    IDC_COMBO4, 0x403, 2, 0
+0x0030, 
+    IDC_COMBO4, 0x403, 2, 0
+0x0031, 
+    IDC_COMBO4, 0x403, 2, 0
+0x0032, 
+    IDC_COMBO4, 0x403, 2, 0
+0x0033, 
+    IDC_COMBO4, 0x403, 2, 0
+0x0034, 
+    IDC_COMBO4, 0x403, 2, 0
+0x0035, 
+    IDC_COMBO4, 0x403, 2, 0
+0x0036, 
+    IDC_COMBO4, 0x403, 2, 0
+0x0037, 
+    IDC_COMBO4, 0x403, 2, 0
+0x0038, 
+    IDC_COMBO4, 0x403, 2, 0
+0x0039, 
+    IDC_COMBO4, 0x403, 3, 0
+0x3031, "\000" 
+    IDC_COMBO4, 0x403, 3, 0
+0x3131, "\000" 
+    IDC_COMBO4, 0x403, 3, 0
+0x3231, "\000" 
+    IDC_COMBO4, 0x403, 3, 0
+0x3331, "\000" 
+    IDC_COMBO4, 0x403, 3, 0
+0x3431, "\000" 
+    IDC_COMBO4, 0x403, 3, 0
+0x3531, "\000" 
+    IDC_COMBO4, 0x403, 3, 0
+0x3631, "\000" 
+    IDC_COMBO4, 0x403, 3, 0
+0x3731, "\000" 
+    IDC_COMBO4, 0x403, 3, 0
+0x3831, "\000" 
+    IDC_COMBO4, 0x403, 3, 0
+0x3931, "\000" 
+    IDC_COMBO4, 0x403, 3, 0
+0x3032, "\000" 
+    IDC_COMBO4, 0x403, 3, 0
+0x3132, "\000" 
+    IDC_COMBO4, 0x403, 3, 0
+0x3232, "\000" 
+    IDC_COMBO4, 0x403, 3, 0
+0x3332, "\000" 
+    IDC_COMBO4, 0x403, 3, 0
+0x3432, "\000" 
+    IDC_COMBO4, 0x403, 3, 0
+0x3532, "\000" 
+    IDC_COMBO4, 0x403, 3, 0
+0x3632, "\000" 
+    IDC_COMBO4, 0x403, 3, 0
+0x3732, "\000" 
+    IDC_COMBO4, 0x403, 3, 0
+0x3832, "\000" 
+    IDC_COMBO4, 0x403, 3, 0
+0x3932, "\000" 
+    IDC_COMBO4, 0x403, 3, 0
+0x3033, "\000" 
+    IDC_COMBO4, 0x403, 3, 0
+0x3133, "\000" 
+    IDC_COMBO4, 0x403, 3, 0
+0x3233, "\000" 
+    IDC_COMBO4, 0x403, 3, 0
+0x3333, "\000" 
+    IDC_COMBO4, 0x403, 3, 0
+0x3433, "\000" 
+    IDC_COMBO4, 0x403, 3, 0
+0x3533, "\000" 
+    IDC_COMBO4, 0x403, 3, 0
+0x3633, "\000" 
+    IDC_COMBO4, 0x403, 3, 0
+0x3733, "\000" 
+    IDC_COMBO4, 0x403, 3, 0
+0x3833, "\000" 
+    IDC_COMBO4, 0x403, 3, 0
+0x3933, "\000" 
+    IDC_COMBO4, 0x403, 3, 0
+0x3034, "\000" 
+    IDC_COMBO4, 0x403, 3, 0
+0x3134, "\000" 
+    IDC_COMBO4, 0x403, 3, 0
+0x3234, "\000" 
+    IDC_COMBO4, 0x403, 3, 0
+0x3334, "\000" 
+    IDC_COMBO4, 0x403, 3, 0
+0x3434, "\000" 
+    IDC_COMBO4, 0x403, 3, 0
+0x3534, "\000" 
+    IDC_COMBO4, 0x403, 3, 0
+0x3634, "\000" 
+    IDC_COMBO4, 0x403, 3, 0
+0x3734, "\000" 
+    IDC_COMBO4, 0x403, 3, 0
+0x3834, "\000" 
+    IDC_COMBO4, 0x403, 3, 0
+0x3934, "\000" 
+    IDC_COMBO4, 0x403, 3, 0
+0x3035, "\000" 
+    IDC_COMBO4, 0x403, 3, 0
+0x3135, "\000" 
+    IDC_COMBO4, 0x403, 3, 0
+0x3235, "\000" 
+    IDC_COMBO4, 0x403, 3, 0
+0x3335, "\000" 
+    IDC_COMBO4, 0x403, 3, 0
+0x3435, "\000" 
+    IDC_COMBO4, 0x403, 3, 0
+0x3535, "\000" 
+    IDC_COMBO4, 0x403, 3, 0
+0x3635, "\000" 
+    IDC_COMBO4, 0x403, 3, 0
+0x3735, "\000" 
+    IDC_COMBO4, 0x403, 3, 0
+0x3835, "\000" 
+    IDC_COMBO4, 0x403, 3, 0
+0x3935, "\000" 
+    IDC_COMBO4, 0x403, 3, 0
+0x3036, "\000" 
+    IDC_COMBO4, 0x403, 3, 0
+0x3136, "\000" 
+    IDC_COMBO4, 0x403, 3, 0
+0x3236, "\000" 
+    IDC_COMBO4, 0x403, 3, 0
+0x3336, "\000" 
+    IDC_COMBO4, 0x403, 3, 0
+0x3436, "\000" 
+    IDC_COMBO4, 0x403, 3, 0
+0x3536, "\000" 
+    IDC_COMBO4, 0x403, 3, 0
+0x3636, "\000" 
+    IDC_COMBO4, 0x403, 3, 0
+0x3736, "\000" 
+    IDC_COMBO4, 0x403, 3, 0
+0x3836, "\000" 
+    IDC_COMBO4, 0x403, 3, 0
+0x3936, "\000" 
+    IDC_COMBO4, 0x403, 3, 0
+0x3037, "\000" 
+    IDC_COMBO4, 0x403, 3, 0
+0x3137, "\000" 
+    IDC_COMBO4, 0x403, 3, 0
+0x3237, "\000" 
+    IDC_COMBO4, 0x403, 3, 0
+0x3337, "\000" 
+    IDC_COMBO4, 0x403, 3, 0
+0x3437, "\000" 
+    IDC_COMBO4, 0x403, 3, 0
+0x3537, "\000" 
+    IDC_COMBO4, 0x403, 3, 0
+0x3637, "\000" 
+    IDC_COMBO4, 0x403, 3, 0
+0x3737, "\000" 
+    IDC_COMBO4, 0x403, 3, 0
+0x3837, "\000" 
+    IDC_COMBO4, 0x403, 3, 0
+0x3937, "\000" 
+    IDC_COMBO4, 0x403, 3, 0
+0x3038, "\000" 
+    IDC_COMBO4, 0x403, 3, 0
+0x3138, "\000" 
+    IDC_COMBO4, 0x403, 3, 0
+0x3238, "\000" 
+    IDC_COMBO4, 0x403, 3, 0
+0x3338, "\000" 
+    IDC_COMBO4, 0x403, 3, 0
+0x3438, "\000" 
+    IDC_COMBO4, 0x403, 3, 0
+0x3538, "\000" 
+    IDC_COMBO4, 0x403, 3, 0
+0x3638, "\000" 
+    IDC_COMBO4, 0x403, 3, 0
+0x3738, "\000" 
+    IDC_COMBO4, 0x403, 3, 0
+0x3838, "\000" 
+    IDC_COMBO4, 0x403, 3, 0
+0x3938, "\000" 
+    IDC_COMBO4, 0x403, 3, 0
+0x3039, "\000" 
+    IDC_COMBO4, 0x403, 3, 0
+0x3139, "\000" 
+    IDC_COMBO4, 0x403, 3, 0
+0x3239, "\000" 
+    IDC_COMBO4, 0x403, 3, 0
+0x3339, "\000" 
+    IDC_COMBO4, 0x403, 3, 0
+0x3439, "\000" 
+    IDC_COMBO4, 0x403, 3, 0
+0x3539, "\000" 
+    IDC_COMBO4, 0x403, 3, 0
+0x3639, "\000" 
+    IDC_COMBO4, 0x403, 3, 0
+0x3739, "\000" 
+    IDC_COMBO4, 0x403, 3, 0
+0x3839, "\000" 
+    IDC_COMBO4, 0x403, 3, 0
+0x3939, "\000" 
+    IDC_COMBO4, 0x403, 4, 0
+0x3031, 0x0030, 
+    IDC_COMBO4, 0x403, 4, 0
+0x3031, 0x0031, 
+    IDC_COMBO4, 0x403, 4, 0
+0x3031, 0x0032, 
+    IDC_COMBO4, 0x403, 4, 0
+0x3031, 0x0033, 
+    IDC_COMBO4, 0x403, 4, 0
+0x3031, 0x0034, 
+    IDC_COMBO4, 0x403, 4, 0
+0x3031, 0x0035, 
+    IDC_COMBO4, 0x403, 4, 0
+0x3031, 0x0036, 
+    IDC_COMBO4, 0x403, 4, 0
+0x3031, 0x0037, 
+    IDC_COMBO4, 0x403, 4, 0
+0x3031, 0x0038, 
+    IDC_COMBO4, 0x403, 4, 0
+0x3031, 0x0039, 
+    IDC_COMBO4, 0x403, 4, 0
+0x3131, 0x0030, 
+    IDC_COMBO4, 0x403, 4, 0
+0x3131, 0x0031, 
+    IDC_COMBO4, 0x403, 4, 0
+0x3131, 0x0032, 
+    IDC_COMBO4, 0x403, 4, 0
+0x3131, 0x0033, 
+    IDC_COMBO4, 0x403, 4, 0
+0x3131, 0x0034, 
+    IDC_COMBO4, 0x403, 4, 0
+0x3131, 0x0035, 
+    IDC_COMBO4, 0x403, 4, 0
+0x3131, 0x0036, 
+    IDC_COMBO4, 0x403, 4, 0
+0x3131, 0x0037, 
+    IDC_COMBO4, 0x403, 4, 0
+0x3131, 0x0038, 
+    IDC_COMBO4, 0x403, 4, 0
+0x3131, 0x0039, 
+    IDC_COMBO4, 0x403, 4, 0
+0x3231, 0x0030, 
+    IDC_COMBO4, 0x403, 4, 0
+0x3231, 0x0031, 
+    IDC_COMBO4, 0x403, 4, 0
+0x3231, 0x0032, 
+    IDC_COMBO4, 0x403, 4, 0
+0x3231, 0x0033, 
+    IDC_COMBO4, 0x403, 4, 0
+0x3231, 0x0034, 
+    IDC_COMBO4, 0x403, 4, 0
+0x3231, 0x0035, 
+    IDC_COMBO4, 0x403, 4, 0
+0x3231, 0x0036, 
+    IDC_COMBO4, 0x403, 4, 0
+0x3231, 0x0037, 
+    IDC_COMBO4, 0x403, 4, 0
+0x3231, 0x0038, 
+    IDC_COMBO4, 0x403, 4, 0
+0x3231, 0x0039, 
+    IDC_COMBO4, 0x403, 4, 0
+0x3331, 0x0030, 
+    IDC_COMBO4, 0x403, 4, 0
+0x3331, 0x0031, 
+    IDC_COMBO4, 0x403, 4, 0
+0x3331, 0x0032, 
+    IDC_COMBO4, 0x403, 4, 0
+0x3331, 0x0033, 
+    IDC_COMBO4, 0x403, 4, 0
+0x3331, 0x0034, 
+    IDC_COMBO4, 0x403, 4, 0
+0x3331, 0x0035, 
+    IDC_COMBO4, 0x403, 4, 0
+0x3331, 0x0036, 
+    IDC_COMBO4, 0x403, 4, 0
+0x3331, 0x0037, 
+    IDC_COMBO4, 0x403, 4, 0
+0x3331, 0x0038, 
+    IDC_COMBO4, 0x403, 4, 0
+0x3331, 0x0039, 
+    IDC_COMBO4, 0x403, 4, 0
+0x3431, 0x0030, 
+    IDC_COMBO4, 0x403, 4, 0
+0x3431, 0x0031, 
+    IDC_COMBO4, 0x403, 4, 0
+0x3431, 0x0032, 
+    IDC_COMBO4, 0x403, 4, 0
+0x3431, 0x0033, 
+    IDC_COMBO4, 0x403, 4, 0
+0x3431, 0x0034, 
+    IDC_COMBO4, 0x403, 4, 0
+0x3431, 0x0035, 
+    IDC_COMBO4, 0x403, 4, 0
+0x3431, 0x0036, 
+    IDC_COMBO4, 0x403, 4, 0
+0x3431, 0x0037, 
+    IDC_COMBO4, 0x403, 4, 0
+0x3431, 0x0038, 
+    IDC_COMBO4, 0x403, 4, 0
+0x3431, 0x0039, 
+    IDC_COMBO4, 0x403, 4, 0
+0x3531, 0x0030, 
+    IDC_COMBO4, 0x403, 4, 0
+0x3531, 0x0031, 
+    IDC_COMBO4, 0x403, 4, 0
+0x3531, 0x0032, 
+    IDC_COMBO4, 0x403, 4, 0
+0x3531, 0x0033, 
+    IDC_COMBO4, 0x403, 4, 0
+0x3531, 0x0034, 
+    IDC_COMBO4, 0x403, 4, 0
+0x3531, 0x0035, 
+    IDC_COMBO4, 0x403, 4, 0
+0x3531, 0x0036, 
+    IDC_COMBO4, 0x403, 4, 0
+0x3531, 0x0037, 
+    IDC_COMBO4, 0x403, 4, 0
+0x3531, 0x0038, 
+    IDC_COMBO4, 0x403, 4, 0
+0x3531, 0x0039, 
+    IDC_COMBO4, 0x403, 4, 0
+0x3631, 0x0030, 
+    IDC_COMBO4, 0x403, 4, 0
+0x3631, 0x0031, 
+    IDC_COMBO4, 0x403, 4, 0
+0x3631, 0x0032, 
+    IDC_COMBO4, 0x403, 4, 0
+0x3631, 0x0033, 
+    IDC_COMBO4, 0x403, 4, 0
+0x3631, 0x0034, 
+    IDC_COMBO4, 0x403, 4, 0
+0x3631, 0x0035, 
+    IDC_COMBO4, 0x403, 4, 0
+0x3631, 0x0036, 
+    IDC_COMBO4, 0x403, 4, 0
+0x3631, 0x0037, 
+    IDC_COMBO4, 0x403, 4, 0
+0x3631, 0x0038, 
+    IDC_COMBO4, 0x403, 4, 0
+0x3631, 0x0039, 
+    IDC_COMBO4, 0x403, 4, 0
+0x3731, 0x0030, 
+    IDC_COMBO4, 0x403, 4, 0
+0x3731, 0x0031, 
+    IDC_COMBO4, 0x403, 4, 0
+0x3731, 0x0032, 
+    IDC_COMBO4, 0x403, 4, 0
+0x3731, 0x0033, 
+    IDC_COMBO4, 0x403, 4, 0
+0x3731, 0x0034, 
+    IDC_COMBO4, 0x403, 4, 0
+0x3731, 0x0035, 
+    IDC_COMBO4, 0x403, 4, 0
+0x3731, 0x0036, 
+    IDC_COMBO4, 0x403, 4, 0
+0x3731, 0x0037, 
+    IDC_COMBO4, 0x403, 4, 0
+0x3731, 0x0038, 
+    IDC_COMBO4, 0x403, 4, 0
+0x3731, 0x0039, 
+    IDC_COMBO4, 0x403, 4, 0
+0x3831, 0x0030, 
+    IDC_COMBO4, 0x403, 4, 0
+0x3831, 0x0031, 
+    IDC_COMBO4, 0x403, 4, 0
+0x3831, 0x0032, 
+    IDC_COMBO4, 0x403, 4, 0
+0x3831, 0x0033, 
+    IDC_COMBO4, 0x403, 4, 0
+0x3831, 0x0034, 
+    IDC_COMBO4, 0x403, 4, 0
+0x3831, 0x0035, 
+    IDC_COMBO4, 0x403, 4, 0
+0x3831, 0x0036, 
+    IDC_COMBO4, 0x403, 4, 0
+0x3831, 0x0037, 
+    IDC_COMBO4, 0x403, 4, 0
+0x3831, 0x0038, 
+    IDC_COMBO4, 0x403, 4, 0
+0x3831, 0x0039, 
+    IDC_COMBO4, 0x403, 4, 0
+0x3931, 0x0030, 
+    IDC_COMBO4, 0x403, 4, 0
+0x3931, 0x0031, 
+    IDC_COMBO4, 0x403, 4, 0
+0x3931, 0x0032, 
+    IDC_COMBO4, 0x403, 4, 0
+0x3931, 0x0033, 
+    IDC_COMBO4, 0x403, 4, 0
+0x3931, 0x0034, 
+    IDC_COMBO4, 0x403, 4, 0
+0x3931, 0x0035, 
+    IDC_COMBO4, 0x403, 4, 0
+0x3931, 0x0036, 
+    IDC_COMBO4, 0x403, 4, 0
+0x3931, 0x0037, 
+    IDC_COMBO4, 0x403, 4, 0
+0x3931, 0x0038, 
+    IDC_COMBO4, 0x403, 4, 0
+0x3931, 0x0039, 
+    IDC_COMBO4, 0x403, 4, 0
+0x3032, 0x0030, 
+    IDC_COMBO4, 0x403, 4, 0
+0x3032, 0x0031, 
+    IDC_COMBO4, 0x403, 4, 0
+0x3032, 0x0032, 
+    IDC_COMBO4, 0x403, 4, 0
+0x3032, 0x0033, 
+    IDC_COMBO4, 0x403, 4, 0
+0x3032, 0x0034, 
+    IDC_COMBO4, 0x403, 4, 0
+0x3032, 0x0035, 
+    IDC_COMBO4, 0x403, 4, 0
+0x3032, 0x0036, 
+    IDC_COMBO4, 0x403, 4, 0
+0x3032, 0x0037, 
+    IDC_COMBO4, 0x403, 4, 0
+0x3032, 0x0038, 
+    IDC_COMBO4, 0x403, 4, 0
+0x3032, 0x0039, 
+    IDC_COMBO4, 0x403, 4, 0
+0x3132, 0x0030, 
+    IDC_COMBO4, 0x403, 4, 0
+0x3132, 0x0031, 
+    IDC_COMBO4, 0x403, 4, 0
+0x3132, 0x0032, 
+    IDC_COMBO4, 0x403, 4, 0
+0x3132, 0x0033, 
+    IDC_COMBO4, 0x403, 4, 0
+0x3132, 0x0034, 
+    IDC_COMBO4, 0x403, 4, 0
+0x3132, 0x0035, 
+    IDC_COMBO4, 0x403, 4, 0
+0x3132, 0x0036, 
+    IDC_COMBO4, 0x403, 4, 0
+0x3132, 0x0037, 
+    IDC_COMBO4, 0x403, 4, 0
+0x3132, 0x0038, 
+    IDC_COMBO4, 0x403, 4, 0
+0x3132, 0x0039, 
+    IDC_COMBO4, 0x403, 4, 0
+0x3232, 0x0030, 
+    IDC_COMBO4, 0x403, 4, 0
+0x3232, 0x0031, 
+    IDC_COMBO4, 0x403, 4, 0
+0x3232, 0x0032, 
+    IDC_COMBO4, 0x403, 4, 0
+0x3232, 0x0033, 
+    IDC_COMBO4, 0x403, 4, 0
+0x3232, 0x0034, 
+    IDC_COMBO4, 0x403, 4, 0
+0x3232, 0x0035, 
+    IDC_COMBO4, 0x403, 4, 0
+0x3232, 0x0036, 
+    IDC_COMBO4, 0x403, 4, 0
+0x3232, 0x0037, 
+    IDC_COMBO4, 0x403, 4, 0
+0x3232, 0x0038, 
+    IDC_COMBO4, 0x403, 4, 0
+0x3232, 0x0039, 
+    IDC_COMBO4, 0x403, 4, 0
+0x3332, 0x0030, 
+    IDC_COMBO4, 0x403, 4, 0
+0x3332, 0x0031, 
+    IDC_COMBO4, 0x403, 4, 0
+0x3332, 0x0032, 
+    IDC_COMBO4, 0x403, 4, 0
+0x3332, 0x0033, 
+    IDC_COMBO4, 0x403, 4, 0
+0x3332, 0x0034, 
+    IDC_COMBO4, 0x403, 4, 0
+0x3332, 0x0035, 
+    IDC_COMBO4, 0x403, 4, 0
+0x3332, 0x0036, 
+    IDC_COMBO4, 0x403, 4, 0
+0x3332, 0x0037, 
+    IDC_COMBO4, 0x403, 4, 0
+0x3332, 0x0038, 
+    IDC_COMBO4, 0x403, 4, 0
+0x3332, 0x0039, 
+    IDC_COMBO4, 0x403, 4, 0
+0x3432, 0x0030, 
+    IDC_COMBO4, 0x403, 4, 0
+0x3432, 0x0031, 
+    IDC_COMBO4, 0x403, 4, 0
+0x3432, 0x0032, 
+    IDC_COMBO4, 0x403, 4, 0
+0x3432, 0x0033, 
+    IDC_COMBO4, 0x403, 4, 0
+0x3432, 0x0034, 
+    IDC_COMBO4, 0x403, 4, 0
+0x3432, 0x0035, 
+    IDC_COMBO4, 0x403, 4, 0
+0x3432, 0x0036, 
+    IDC_COMBO4, 0x403, 4, 0
+0x3432, 0x0037, 
+    IDC_COMBO4, 0x403, 4, 0
+0x3432, 0x0038, 
+    IDC_COMBO4, 0x403, 4, 0
+0x3432, 0x0039, 
+    IDC_COMBO4, 0x403, 4, 0
+0x3532, 0x0030, 
+    IDC_COMBO4, 0x403, 4, 0
+0x3532, 0x0031, 
+    IDC_COMBO4, 0x403, 4, 0
+0x3532, 0x0032, 
+    IDC_COMBO4, 0x403, 4, 0
+0x3532, 0x0033, 
+    IDC_COMBO4, 0x403, 4, 0
+0x3532, 0x0034, 
+    IDC_COMBO4, 0x403, 4, 0
+0x3532, 0x0035, 
+    IDC_COMBO5, 0x403, 2, 0
+0x0030, 
+    IDC_COMBO5, 0x403, 2, 0
+0x0031, 
+    IDC_COMBO5, 0x403, 2, 0
+0x0032, 
+    IDC_COMBO5, 0x403, 2, 0
+0x0033, 
+    IDC_COMBO5, 0x403, 2, 0
+0x0034, 
+    IDC_COMBO5, 0x403, 2, 0
+0x0035, 
+    IDC_COMBO5, 0x403, 2, 0
+0x0036, 
+    IDC_COMBO5, 0x403, 2, 0
+0x0037, 
+    IDC_COMBO5, 0x403, 2, 0
+0x0038, 
+    IDC_COMBO5, 0x403, 2, 0
+0x0039, 
+    IDC_COMBO5, 0x403, 3, 0
+0x3031, "\000" 
+    IDC_COMBO5, 0x403, 3, 0
+0x3131, "\000" 
+    IDC_COMBO5, 0x403, 3, 0
+0x3231, "\000" 
+    IDC_COMBO5, 0x403, 3, 0
+0x3331, "\000" 
+    IDC_COMBO5, 0x403, 3, 0
+0x3431, "\000" 
+    IDC_COMBO5, 0x403, 3, 0
+0x3531, "\000" 
+    IDC_COMBO5, 0x403, 3, 0
+0x3631, "\000" 
+    IDC_COMBO5, 0x403, 3, 0
+0x3731, "\000" 
+    IDC_COMBO5, 0x403, 3, 0
+0x3831, "\000" 
+    IDC_COMBO5, 0x403, 3, 0
+0x3931, "\000" 
+    IDC_COMBO5, 0x403, 3, 0
+0x3032, "\000" 
+    IDC_COMBO5, 0x403, 3, 0
+0x3132, "\000" 
+    IDC_COMBO5, 0x403, 3, 0
+0x3232, "\000" 
+    IDC_COMBO5, 0x403, 3, 0
+0x3332, "\000" 
+    IDC_COMBO5, 0x403, 3, 0
+0x3432, "\000" 
+    IDC_COMBO5, 0x403, 3, 0
+0x3532, "\000" 
+    IDC_COMBO5, 0x403, 3, 0
+0x3632, "\000" 
+    IDC_COMBO5, 0x403, 3, 0
+0x3732, "\000" 
+    IDC_COMBO5, 0x403, 3, 0
+0x3832, "\000" 
+    IDC_COMBO5, 0x403, 3, 0
+0x3932, "\000" 
+    IDC_COMBO5, 0x403, 3, 0
+0x3033, "\000" 
+    IDC_COMBO5, 0x403, 3, 0
+0x3133, "\000" 
+    IDC_COMBO5, 0x403, 3, 0
+0x3233, "\000" 
+    IDC_COMBO5, 0x403, 3, 0
+0x3333, "\000" 
+    IDC_COMBO5, 0x403, 3, 0
+0x3433, "\000" 
+    IDC_COMBO5, 0x403, 3, 0
+0x3533, "\000" 
+    IDC_COMBO5, 0x403, 3, 0
+0x3633, "\000" 
+    IDC_COMBO5, 0x403, 3, 0
+0x3733, "\000" 
+    IDC_COMBO5, 0x403, 3, 0
+0x3833, "\000" 
+    IDC_COMBO5, 0x403, 3, 0
+0x3933, "\000" 
+    IDC_COMBO5, 0x403, 3, 0
+0x3034, "\000" 
+    IDC_COMBO5, 0x403, 3, 0
+0x3134, "\000" 
+    IDC_COMBO5, 0x403, 3, 0
+0x3234, "\000" 
+    IDC_COMBO5, 0x403, 3, 0
+0x3334, "\000" 
+    IDC_COMBO5, 0x403, 3, 0
+0x3434, "\000" 
+    IDC_COMBO5, 0x403, 3, 0
+0x3534, "\000" 
+    IDC_COMBO5, 0x403, 3, 0
+0x3634, "\000" 
+    IDC_COMBO5, 0x403, 3, 0
+0x3734, "\000" 
+    IDC_COMBO5, 0x403, 3, 0
+0x3834, "\000" 
+    IDC_COMBO5, 0x403, 3, 0
+0x3934, "\000" 
+    IDC_COMBO5, 0x403, 3, 0
+0x3035, "\000" 
+    IDC_COMBO5, 0x403, 3, 0
+0x3135, "\000" 
+    IDC_COMBO5, 0x403, 3, 0
+0x3235, "\000" 
+    IDC_COMBO5, 0x403, 3, 0
+0x3335, "\000" 
+    IDC_COMBO5, 0x403, 3, 0
+0x3435, "\000" 
+    IDC_COMBO5, 0x403, 3, 0
+0x3535, "\000" 
+    IDC_COMBO5, 0x403, 3, 0
+0x3635, "\000" 
+    IDC_COMBO5, 0x403, 3, 0
+0x3735, "\000" 
+    IDC_COMBO5, 0x403, 3, 0
+0x3835, "\000" 
+    IDC_COMBO5, 0x403, 3, 0
+0x3935, "\000" 
+    IDC_COMBO5, 0x403, 3, 0
+0x3036, "\000" 
+    IDC_COMBO5, 0x403, 3, 0
+0x3136, "\000" 
+    IDC_COMBO5, 0x403, 3, 0
+0x3236, "\000" 
+    IDC_COMBO5, 0x403, 3, 0
+0x3336, "\000" 
+    IDC_COMBO5, 0x403, 3, 0
+0x3436, "\000" 
+    IDC_COMBO5, 0x403, 3, 0
+0x3536, "\000" 
+    IDC_COMBO5, 0x403, 3, 0
+0x3636, "\000" 
+    IDC_COMBO5, 0x403, 3, 0
+0x3736, "\000" 
+    IDC_COMBO5, 0x403, 3, 0
+0x3836, "\000" 
+    IDC_COMBO5, 0x403, 3, 0
+0x3936, "\000" 
+    IDC_COMBO5, 0x403, 3, 0
+0x3037, "\000" 
+    IDC_COMBO5, 0x403, 3, 0
+0x3137, "\000" 
+    IDC_COMBO5, 0x403, 3, 0
+0x3237, "\000" 
+    IDC_COMBO5, 0x403, 3, 0
+0x3337, "\000" 
+    IDC_COMBO5, 0x403, 3, 0
+0x3437, "\000" 
+    IDC_COMBO5, 0x403, 3, 0
+0x3537, "\000" 
+    IDC_COMBO5, 0x403, 3, 0
+0x3637, "\000" 
+    IDC_COMBO5, 0x403, 3, 0
+0x3737, "\000" 
+    IDC_COMBO5, 0x403, 3, 0
+0x3837, "\000" 
+    IDC_COMBO5, 0x403, 3, 0
+0x3937, "\000" 
+    IDC_COMBO5, 0x403, 3, 0
+0x3038, "\000" 
+    IDC_COMBO5, 0x403, 3, 0
+0x3138, "\000" 
+    IDC_COMBO5, 0x403, 3, 0
+0x3238, "\000" 
+    IDC_COMBO5, 0x403, 3, 0
+0x3338, "\000" 
+    IDC_COMBO5, 0x403, 3, 0
+0x3438, "\000" 
+    IDC_COMBO5, 0x403, 3, 0
+0x3538, "\000" 
+    IDC_COMBO5, 0x403, 3, 0
+0x3638, "\000" 
+    IDC_COMBO5, 0x403, 3, 0
+0x3738, "\000" 
+    IDC_COMBO5, 0x403, 3, 0
+0x3838, "\000" 
+    IDC_COMBO5, 0x403, 3, 0
+0x3938, "\000" 
+    IDC_COMBO5, 0x403, 3, 0
+0x3039, "\000" 
+    IDC_COMBO5, 0x403, 3, 0
+0x3139, "\000" 
+    IDC_COMBO5, 0x403, 3, 0
+0x3239, "\000" 
+    IDC_COMBO5, 0x403, 3, 0
+0x3339, "\000" 
+    IDC_COMBO5, 0x403, 3, 0
+0x3439, "\000" 
+    IDC_COMBO5, 0x403, 3, 0
+0x3539, "\000" 
+    IDC_COMBO5, 0x403, 3, 0
+0x3639, "\000" 
+    IDC_COMBO5, 0x403, 3, 0
+0x3739, "\000" 
+    IDC_COMBO5, 0x403, 3, 0
+0x3839, "\000" 
+    IDC_COMBO5, 0x403, 3, 0
+0x3939, "\000" 
+    IDC_COMBO5, 0x403, 4, 0
+0x3031, 0x0030, 
+    IDC_COMBO5, 0x403, 4, 0
+0x3031, 0x0031, 
+    IDC_COMBO5, 0x403, 4, 0
+0x3031, 0x0032, 
+    IDC_COMBO5, 0x403, 4, 0
+0x3031, 0x0033, 
+    IDC_COMBO5, 0x403, 4, 0
+0x3031, 0x0034, 
+    IDC_COMBO5, 0x403, 4, 0
+0x3031, 0x0035, 
+    IDC_COMBO5, 0x403, 4, 0
+0x3031, 0x0036, 
+    IDC_COMBO5, 0x403, 4, 0
+0x3031, 0x0037, 
+    IDC_COMBO5, 0x403, 4, 0
+0x3031, 0x0038, 
+    IDC_COMBO5, 0x403, 4, 0
+0x3031, 0x0039, 
+    IDC_COMBO5, 0x403, 4, 0
+0x3131, 0x0030, 
+    IDC_COMBO5, 0x403, 4, 0
+0x3131, 0x0031, 
+    IDC_COMBO5, 0x403, 4, 0
+0x3131, 0x0032, 
+    IDC_COMBO5, 0x403, 4, 0
+0x3131, 0x0033, 
+    IDC_COMBO5, 0x403, 4, 0
+0x3131, 0x0034, 
+    IDC_COMBO5, 0x403, 4, 0
+0x3131, 0x0035, 
+    IDC_COMBO5, 0x403, 4, 0
+0x3131, 0x0036, 
+    IDC_COMBO5, 0x403, 4, 0
+0x3131, 0x0037, 
+    IDC_COMBO5, 0x403, 4, 0
+0x3131, 0x0038, 
+    IDC_COMBO5, 0x403, 4, 0
+0x3131, 0x0039, 
+    IDC_COMBO5, 0x403, 4, 0
+0x3231, 0x0030, 
+    IDC_COMBO5, 0x403, 4, 0
+0x3231, 0x0031, 
+    IDC_COMBO5, 0x403, 4, 0
+0x3231, 0x0032, 
+    IDC_COMBO5, 0x403, 4, 0
+0x3231, 0x0033, 
+    IDC_COMBO5, 0x403, 4, 0
+0x3231, 0x0034, 
+    IDC_COMBO5, 0x403, 4, 0
+0x3231, 0x0035, 
+    IDC_COMBO5, 0x403, 4, 0
+0x3231, 0x0036, 
+    IDC_COMBO5, 0x403, 4, 0
+0x3231, 0x0037, 
+    IDC_COMBO5, 0x403, 4, 0
+0x3231, 0x0038, 
+    IDC_COMBO5, 0x403, 4, 0
+0x3231, 0x0039, 
+    IDC_COMBO5, 0x403, 4, 0
+0x3331, 0x0030, 
+    IDC_COMBO5, 0x403, 4, 0
+0x3331, 0x0031, 
+    IDC_COMBO5, 0x403, 4, 0
+0x3331, 0x0032, 
+    IDC_COMBO5, 0x403, 4, 0
+0x3331, 0x0033, 
+    IDC_COMBO5, 0x403, 4, 0
+0x3331, 0x0034, 
+    IDC_COMBO5, 0x403, 4, 0
+0x3331, 0x0035, 
+    IDC_COMBO5, 0x403, 4, 0
+0x3331, 0x0036, 
+    IDC_COMBO5, 0x403, 4, 0
+0x3331, 0x0037, 
+    IDC_COMBO5, 0x403, 4, 0
+0x3331, 0x0038, 
+    IDC_COMBO5, 0x403, 4, 0
+0x3331, 0x0039, 
+    IDC_COMBO5, 0x403, 4, 0
+0x3431, 0x0030, 
+    IDC_COMBO5, 0x403, 4, 0
+0x3431, 0x0031, 
+    IDC_COMBO5, 0x403, 4, 0
+0x3431, 0x0032, 
+    IDC_COMBO5, 0x403, 4, 0
+0x3431, 0x0033, 
+    IDC_COMBO5, 0x403, 4, 0
+0x3431, 0x0034, 
+    IDC_COMBO5, 0x403, 4, 0
+0x3431, 0x0035, 
+    IDC_COMBO5, 0x403, 4, 0
+0x3431, 0x0036, 
+    IDC_COMBO5, 0x403, 4, 0
+0x3431, 0x0037, 
+    IDC_COMBO5, 0x403, 4, 0
+0x3431, 0x0038, 
+    IDC_COMBO5, 0x403, 4, 0
+0x3431, 0x0039, 
+    IDC_COMBO5, 0x403, 4, 0
+0x3531, 0x0030, 
+    IDC_COMBO5, 0x403, 4, 0
+0x3531, 0x0031, 
+    IDC_COMBO5, 0x403, 4, 0
+0x3531, 0x0032, 
+    IDC_COMBO5, 0x403, 4, 0
+0x3531, 0x0033, 
+    IDC_COMBO5, 0x403, 4, 0
+0x3531, 0x0034, 
+    IDC_COMBO5, 0x403, 4, 0
+0x3531, 0x0035, 
+    IDC_COMBO5, 0x403, 4, 0
+0x3531, 0x0036, 
+    IDC_COMBO5, 0x403, 4, 0
+0x3531, 0x0037, 
+    IDC_COMBO5, 0x403, 4, 0
+0x3531, 0x0038, 
+    IDC_COMBO5, 0x403, 4, 0
+0x3531, 0x0039, 
+    IDC_COMBO5, 0x403, 4, 0
+0x3631, 0x0030, 
+    IDC_COMBO5, 0x403, 4, 0
+0x3631, 0x0031, 
+    IDC_COMBO5, 0x403, 4, 0
+0x3631, 0x0032, 
+    IDC_COMBO5, 0x403, 4, 0
+0x3631, 0x0033, 
+    IDC_COMBO5, 0x403, 4, 0
+0x3631, 0x0034, 
+    IDC_COMBO5, 0x403, 4, 0
+0x3631, 0x0035, 
+    IDC_COMBO5, 0x403, 4, 0
+0x3631, 0x0036, 
+    IDC_COMBO5, 0x403, 4, 0
+0x3631, 0x0037, 
+    IDC_COMBO5, 0x403, 4, 0
+0x3631, 0x0038, 
+    IDC_COMBO5, 0x403, 4, 0
+0x3631, 0x0039, 
+    IDC_COMBO5, 0x403, 4, 0
+0x3731, 0x0030, 
+    IDC_COMBO5, 0x403, 4, 0
+0x3731, 0x0031, 
+    IDC_COMBO5, 0x403, 4, 0
+0x3731, 0x0032, 
+    IDC_COMBO5, 0x403, 4, 0
+0x3731, 0x0033, 
+    IDC_COMBO5, 0x403, 4, 0
+0x3731, 0x0034, 
+    IDC_COMBO5, 0x403, 4, 0
+0x3731, 0x0035, 
+    IDC_COMBO5, 0x403, 4, 0
+0x3731, 0x0036, 
+    IDC_COMBO5, 0x403, 4, 0
+0x3731, 0x0037, 
+    IDC_COMBO5, 0x403, 4, 0
+0x3731, 0x0038, 
+    IDC_COMBO5, 0x403, 4, 0
+0x3731, 0x0039, 
+    IDC_COMBO5, 0x403, 4, 0
+0x3831, 0x0030, 
+    IDC_COMBO5, 0x403, 4, 0
+0x3831, 0x0031, 
+    IDC_COMBO5, 0x403, 4, 0
+0x3831, 0x0032, 
+    IDC_COMBO5, 0x403, 4, 0
+0x3831, 0x0033, 
+    IDC_COMBO5, 0x403, 4, 0
+0x3831, 0x0034, 
+    IDC_COMBO5, 0x403, 4, 0
+0x3831, 0x0035, 
+    IDC_COMBO5, 0x403, 4, 0
+0x3831, 0x0036, 
+    IDC_COMBO5, 0x403, 4, 0
+0x3831, 0x0037, 
+    IDC_COMBO5, 0x403, 4, 0
+0x3831, 0x0038, 
+    IDC_COMBO5, 0x403, 4, 0
+0x3831, 0x0039, 
+    IDC_COMBO5, 0x403, 4, 0
+0x3931, 0x0030, 
+    IDC_COMBO5, 0x403, 4, 0
+0x3931, 0x0031, 
+    IDC_COMBO5, 0x403, 4, 0
+0x3931, 0x0032, 
+    IDC_COMBO5, 0x403, 4, 0
+0x3931, 0x0033, 
+    IDC_COMBO5, 0x403, 4, 0
+0x3931, 0x0034, 
+    IDC_COMBO5, 0x403, 4, 0
+0x3931, 0x0035, 
+    IDC_COMBO5, 0x403, 4, 0
+0x3931, 0x0036, 
+    IDC_COMBO5, 0x403, 4, 0
+0x3931, 0x0037, 
+    IDC_COMBO5, 0x403, 4, 0
+0x3931, 0x0038, 
+    IDC_COMBO5, 0x403, 4, 0
+0x3931, 0x0039, 
+    IDC_COMBO5, 0x403, 4, 0
+0x3032, 0x0030, 
+    IDC_COMBO5, 0x403, 4, 0
+0x3032, 0x0031, 
+    IDC_COMBO5, 0x403, 4, 0
+0x3032, 0x0032, 
+    IDC_COMBO5, 0x403, 4, 0
+0x3032, 0x0033, 
+    IDC_COMBO5, 0x403, 4, 0
+0x3032, 0x0034, 
+    IDC_COMBO5, 0x403, 4, 0
+0x3032, 0x0035, 
+    IDC_COMBO5, 0x403, 4, 0
+0x3032, 0x0036, 
+    IDC_COMBO5, 0x403, 4, 0
+0x3032, 0x0037, 
+    IDC_COMBO5, 0x403, 4, 0
+0x3032, 0x0038, 
+    IDC_COMBO5, 0x403, 4, 0
+0x3032, 0x0039, 
+    IDC_COMBO5, 0x403, 4, 0
+0x3132, 0x0030, 
+    IDC_COMBO5, 0x403, 4, 0
+0x3132, 0x0031, 
+    IDC_COMBO5, 0x403, 4, 0
+0x3132, 0x0032, 
+    IDC_COMBO5, 0x403, 4, 0
+0x3132, 0x0033, 
+    IDC_COMBO5, 0x403, 4, 0
+0x3132, 0x0034, 
+    IDC_COMBO5, 0x403, 4, 0
+0x3132, 0x0035, 
+    IDC_COMBO5, 0x403, 4, 0
+0x3132, 0x0036, 
+    IDC_COMBO5, 0x403, 4, 0
+0x3132, 0x0037, 
+    IDC_COMBO5, 0x403, 4, 0
+0x3132, 0x0038, 
+    IDC_COMBO5, 0x403, 4, 0
+0x3132, 0x0039, 
+    IDC_COMBO5, 0x403, 4, 0
+0x3232, 0x0030, 
+    IDC_COMBO5, 0x403, 4, 0
+0x3232, 0x0031, 
+    IDC_COMBO5, 0x403, 4, 0
+0x3232, 0x0032, 
+    IDC_COMBO5, 0x403, 4, 0
+0x3232, 0x0033, 
+    IDC_COMBO5, 0x403, 4, 0
+0x3232, 0x0034, 
+    IDC_COMBO5, 0x403, 4, 0
+0x3232, 0x0035, 
+    IDC_COMBO5, 0x403, 4, 0
+0x3232, 0x0036, 
+    IDC_COMBO5, 0x403, 4, 0
+0x3232, 0x0037, 
+    IDC_COMBO5, 0x403, 4, 0
+0x3232, 0x0038, 
+    IDC_COMBO5, 0x403, 4, 0
+0x3232, 0x0039, 
+    IDC_COMBO5, 0x403, 4, 0
+0x3332, 0x0030, 
+    IDC_COMBO5, 0x403, 4, 0
+0x3332, 0x0031, 
+    IDC_COMBO5, 0x403, 4, 0
+0x3332, 0x0032, 
+    IDC_COMBO5, 0x403, 4, 0
+0x3332, 0x0033, 
+    IDC_COMBO5, 0x403, 4, 0
+0x3332, 0x0034, 
+    IDC_COMBO5, 0x403, 4, 0
+0x3332, 0x0035, 
+    IDC_COMBO5, 0x403, 4, 0
+0x3332, 0x0036, 
+    IDC_COMBO5, 0x403, 4, 0
+0x3332, 0x0037, 
+    IDC_COMBO5, 0x403, 4, 0
+0x3332, 0x0038, 
+    IDC_COMBO5, 0x403, 4, 0
+0x3332, 0x0039, 
+    IDC_COMBO5, 0x403, 4, 0
+0x3432, 0x0030, 
+    IDC_COMBO5, 0x403, 4, 0
+0x3432, 0x0031, 
+    IDC_COMBO5, 0x403, 4, 0
+0x3432, 0x0032, 
+    IDC_COMBO5, 0x403, 4, 0
+0x3432, 0x0033, 
+    IDC_COMBO5, 0x403, 4, 0
+0x3432, 0x0034, 
+    IDC_COMBO5, 0x403, 4, 0
+0x3432, 0x0035, 
+    IDC_COMBO5, 0x403, 4, 0
+0x3432, 0x0036, 
+    IDC_COMBO5, 0x403, 4, 0
+0x3432, 0x0037, 
+    IDC_COMBO5, 0x403, 4, 0
+0x3432, 0x0038, 
+    IDC_COMBO5, 0x403, 4, 0
+0x3432, 0x0039, 
+    IDC_COMBO5, 0x403, 4, 0
+0x3532, 0x0030, 
+    IDC_COMBO5, 0x403, 4, 0
+0x3532, 0x0031, 
+    IDC_COMBO5, 0x403, 4, 0
+0x3532, 0x0032, 
+    IDC_COMBO5, 0x403, 4, 0
+0x3532, 0x0033, 
+    IDC_COMBO5, 0x403, 4, 0
+0x3532, 0x0034, 
+    IDC_COMBO5, 0x403, 4, 0
+0x3532, 0x0035, 
+    IDC_COMBO6, 0x403, 2, 0
+0x0030, 
+    IDC_COMBO6, 0x403, 2, 0
+0x0031, 
+    IDC_COMBO6, 0x403, 2, 0
+0x0032, 
+    IDC_COMBO6, 0x403, 2, 0
+0x0033, 
+    IDC_COMBO6, 0x403, 2, 0
+0x0034, 
+    IDC_COMBO6, 0x403, 2, 0
+0x0035, 
+    IDC_COMBO6, 0x403, 2, 0
+0x0036, 
+    IDC_COMBO6, 0x403, 2, 0
+0x0037, 
+    IDC_COMBO6, 0x403, 2, 0
+0x0038, 
+    IDC_COMBO6, 0x403, 2, 0
+0x0039, 
+    IDC_COMBO6, 0x403, 3, 0
+0x3031, "\000" 
+    IDC_COMBO6, 0x403, 3, 0
+0x3131, "\000" 
+    IDC_COMBO6, 0x403, 3, 0
+0x3231, "\000" 
+    IDC_COMBO6, 0x403, 3, 0
+0x3331, "\000" 
+    IDC_COMBO6, 0x403, 3, 0
+0x3431, "\000" 
+    IDC_COMBO6, 0x403, 3, 0
+0x3531, "\000" 
+    IDC_COMBO6, 0x403, 3, 0
+0x3631, "\000" 
+    IDC_COMBO6, 0x403, 3, 0
+0x3731, "\000" 
+    IDC_COMBO6, 0x403, 3, 0
+0x3831, "\000" 
+    IDC_COMBO6, 0x403, 3, 0
+0x3931, "\000" 
+    IDC_COMBO6, 0x403, 3, 0
+0x3032, "\000" 
+    IDC_COMBO6, 0x403, 3, 0
+0x3132, "\000" 
+    IDC_COMBO6, 0x403, 3, 0
+0x3232, "\000" 
+    IDC_COMBO6, 0x403, 3, 0
+0x3332, "\000" 
+    IDC_COMBO6, 0x403, 3, 0
+0x3432, "\000" 
+    IDC_COMBO6, 0x403, 3, 0
+0x3532, "\000" 
+    IDC_COMBO6, 0x403, 3, 0
+0x3632, "\000" 
+    IDC_COMBO6, 0x403, 3, 0
+0x3732, "\000" 
+    IDC_COMBO6, 0x403, 3, 0
+0x3832, "\000" 
+    IDC_COMBO6, 0x403, 3, 0
+0x3932, "\000" 
+    IDC_COMBO6, 0x403, 3, 0
+0x3033, "\000" 
+    IDC_COMBO6, 0x403, 3, 0
+0x3133, "\000" 
+    IDC_COMBO6, 0x403, 3, 0
+0x3233, "\000" 
+    IDC_COMBO6, 0x403, 3, 0
+0x3333, "\000" 
+    IDC_COMBO6, 0x403, 3, 0
+0x3433, "\000" 
+    IDC_COMBO6, 0x403, 3, 0
+0x3533, "\000" 
+    IDC_COMBO6, 0x403, 3, 0
+0x3633, "\000" 
+    IDC_COMBO6, 0x403, 3, 0
+0x3733, "\000" 
+    IDC_COMBO6, 0x403, 3, 0
+0x3833, "\000" 
+    IDC_COMBO6, 0x403, 3, 0
+0x3933, "\000" 
+    IDC_COMBO6, 0x403, 3, 0
+0x3034, "\000" 
+    IDC_COMBO6, 0x403, 3, 0
+0x3134, "\000" 
+    IDC_COMBO6, 0x403, 3, 0
+0x3234, "\000" 
+    IDC_COMBO6, 0x403, 3, 0
+0x3334, "\000" 
+    IDC_COMBO6, 0x403, 3, 0
+0x3434, "\000" 
+    IDC_COMBO6, 0x403, 3, 0
+0x3534, "\000" 
+    IDC_COMBO6, 0x403, 3, 0
+0x3634, "\000" 
+    IDC_COMBO6, 0x403, 3, 0
+0x3734, "\000" 
+    IDC_COMBO6, 0x403, 3, 0
+0x3834, "\000" 
+    IDC_COMBO6, 0x403, 3, 0
+0x3934, "\000" 
+    IDC_COMBO6, 0x403, 3, 0
+0x3035, "\000" 
+    IDC_COMBO6, 0x403, 3, 0
+0x3135, "\000" 
+    IDC_COMBO6, 0x403, 3, 0
+0x3235, "\000" 
+    IDC_COMBO6, 0x403, 3, 0
+0x3335, "\000" 
+    IDC_COMBO6, 0x403, 3, 0
+0x3435, "\000" 
+    IDC_COMBO6, 0x403, 3, 0
+0x3535, "\000" 
+    IDC_COMBO6, 0x403, 3, 0
+0x3635, "\000" 
+    IDC_COMBO6, 0x403, 3, 0
+0x3735, "\000" 
+    IDC_COMBO6, 0x403, 3, 0
+0x3835, "\000" 
+    IDC_COMBO6, 0x403, 3, 0
+0x3935, "\000" 
+    IDC_COMBO6, 0x403, 3, 0
+0x3036, "\000" 
+    IDC_COMBO6, 0x403, 3, 0
+0x3136, "\000" 
+    IDC_COMBO6, 0x403, 3, 0
+0x3236, "\000" 
+    IDC_COMBO6, 0x403, 3, 0
+0x3336, "\000" 
+    IDC_COMBO6, 0x403, 3, 0
+0x3436, "\000" 
+    IDC_COMBO6, 0x403, 3, 0
+0x3536, "\000" 
+    IDC_COMBO6, 0x403, 3, 0
+0x3636, "\000" 
+    IDC_COMBO6, 0x403, 3, 0
+0x3736, "\000" 
+    IDC_COMBO6, 0x403, 3, 0
+0x3836, "\000" 
+    IDC_COMBO6, 0x403, 3, 0
+0x3936, "\000" 
+    IDC_COMBO6, 0x403, 3, 0
+0x3037, "\000" 
+    IDC_COMBO6, 0x403, 3, 0
+0x3137, "\000" 
+    IDC_COMBO6, 0x403, 3, 0
+0x3237, "\000" 
+    IDC_COMBO6, 0x403, 3, 0
+0x3337, "\000" 
+    IDC_COMBO6, 0x403, 3, 0
+0x3437, "\000" 
+    IDC_COMBO6, 0x403, 3, 0
+0x3537, "\000" 
+    IDC_COMBO6, 0x403, 3, 0
+0x3637, "\000" 
+    IDC_COMBO6, 0x403, 3, 0
+0x3737, "\000" 
+    IDC_COMBO6, 0x403, 3, 0
+0x3837, "\000" 
+    IDC_COMBO6, 0x403, 3, 0
+0x3937, "\000" 
+    IDC_COMBO6, 0x403, 3, 0
+0x3038, "\000" 
+    IDC_COMBO6, 0x403, 3, 0
+0x3138, "\000" 
+    IDC_COMBO6, 0x403, 3, 0
+0x3238, "\000" 
+    IDC_COMBO6, 0x403, 3, 0
+0x3338, "\000" 
+    IDC_COMBO6, 0x403, 3, 0
+0x3438, "\000" 
+    IDC_COMBO6, 0x403, 3, 0
+0x3538, "\000" 
+    IDC_COMBO6, 0x403, 3, 0
+0x3638, "\000" 
+    IDC_COMBO6, 0x403, 3, 0
+0x3738, "\000" 
+    IDC_COMBO6, 0x403, 3, 0
+0x3838, "\000" 
+    IDC_COMBO6, 0x403, 3, 0
+0x3938, "\000" 
+    IDC_COMBO6, 0x403, 3, 0
+0x3039, "\000" 
+    IDC_COMBO6, 0x403, 3, 0
+0x3139, "\000" 
+    IDC_COMBO6, 0x403, 3, 0
+0x3239, "\000" 
+    IDC_COMBO6, 0x403, 3, 0
+0x3339, "\000" 
+    IDC_COMBO6, 0x403, 3, 0
+0x3439, "\000" 
+    IDC_COMBO6, 0x403, 3, 0
+0x3539, "\000" 
+    IDC_COMBO6, 0x403, 3, 0
+0x3639, "\000" 
+    IDC_COMBO6, 0x403, 3, 0
+0x3739, "\000" 
+    IDC_COMBO6, 0x403, 3, 0
+0x3839, "\000" 
+    IDC_COMBO6, 0x403, 3, 0
+0x3939, "\000" 
+    IDC_COMBO6, 0x403, 4, 0
+0x3031, 0x0030, 
+    IDC_COMBO6, 0x403, 4, 0
+0x3031, 0x0031, 
+    IDC_COMBO6, 0x403, 4, 0
+0x3031, 0x0032, 
+    IDC_COMBO6, 0x403, 4, 0
+0x3031, 0x0033, 
+    IDC_COMBO6, 0x403, 4, 0
+0x3031, 0x0034, 
+    IDC_COMBO6, 0x403, 4, 0
+0x3031, 0x0035, 
+    IDC_COMBO6, 0x403, 4, 0
+0x3031, 0x0036, 
+    IDC_COMBO6, 0x403, 4, 0
+0x3031, 0x0037, 
+    IDC_COMBO6, 0x403, 4, 0
+0x3031, 0x0038, 
+    IDC_COMBO6, 0x403, 4, 0
+0x3031, 0x0039, 
+    IDC_COMBO6, 0x403, 4, 0
+0x3131, 0x0030, 
+    IDC_COMBO6, 0x403, 4, 0
+0x3131, 0x0031, 
+    IDC_COMBO6, 0x403, 4, 0
+0x3131, 0x0032, 
+    IDC_COMBO6, 0x403, 4, 0
+0x3131, 0x0033, 
+    IDC_COMBO6, 0x403, 4, 0
+0x3131, 0x0034, 
+    IDC_COMBO6, 0x403, 4, 0
+0x3131, 0x0035, 
+    IDC_COMBO6, 0x403, 4, 0
+0x3131, 0x0036, 
+    IDC_COMBO6, 0x403, 4, 0
+0x3131, 0x0037, 
+    IDC_COMBO6, 0x403, 4, 0
+0x3131, 0x0038, 
+    IDC_COMBO6, 0x403, 4, 0
+0x3131, 0x0039, 
+    IDC_COMBO6, 0x403, 4, 0
+0x3231, 0x0030, 
+    IDC_COMBO6, 0x403, 4, 0
+0x3231, 0x0031, 
+    IDC_COMBO6, 0x403, 4, 0
+0x3231, 0x0032, 
+    IDC_COMBO6, 0x403, 4, 0
+0x3231, 0x0033, 
+    IDC_COMBO6, 0x403, 4, 0
+0x3231, 0x0034, 
+    IDC_COMBO6, 0x403, 4, 0
+0x3231, 0x0035, 
+    IDC_COMBO6, 0x403, 4, 0
+0x3231, 0x0036, 
+    IDC_COMBO6, 0x403, 4, 0
+0x3231, 0x0037, 
+    IDC_COMBO6, 0x403, 4, 0
+0x3231, 0x0038, 
+    IDC_COMBO6, 0x403, 4, 0
+0x3231, 0x0039, 
+    IDC_COMBO6, 0x403, 4, 0
+0x3331, 0x0030, 
+    IDC_COMBO6, 0x403, 4, 0
+0x3331, 0x0031, 
+    IDC_COMBO6, 0x403, 4, 0
+0x3331, 0x0032, 
+    IDC_COMBO6, 0x403, 4, 0
+0x3331, 0x0033, 
+    IDC_COMBO6, 0x403, 4, 0
+0x3331, 0x0034, 
+    IDC_COMBO6, 0x403, 4, 0
+0x3331, 0x0035, 
+    IDC_COMBO6, 0x403, 4, 0
+0x3331, 0x0036, 
+    IDC_COMBO6, 0x403, 4, 0
+0x3331, 0x0037, 
+    IDC_COMBO6, 0x403, 4, 0
+0x3331, 0x0038, 
+    IDC_COMBO6, 0x403, 4, 0
+0x3331, 0x0039, 
+    IDC_COMBO6, 0x403, 4, 0
+0x3431, 0x0030, 
+    IDC_COMBO6, 0x403, 4, 0
+0x3431, 0x0031, 
+    IDC_COMBO6, 0x403, 4, 0
+0x3431, 0x0032, 
+    IDC_COMBO6, 0x403, 4, 0
+0x3431, 0x0033, 
+    IDC_COMBO6, 0x403, 4, 0
+0x3431, 0x0034, 
+    IDC_COMBO6, 0x403, 4, 0
+0x3431, 0x0035, 
+    IDC_COMBO6, 0x403, 4, 0
+0x3431, 0x0036, 
+    IDC_COMBO6, 0x403, 4, 0
+0x3431, 0x0037, 
+    IDC_COMBO6, 0x403, 4, 0
+0x3431, 0x0038, 
+    IDC_COMBO6, 0x403, 4, 0
+0x3431, 0x0039, 
+    IDC_COMBO6, 0x403, 4, 0
+0x3531, 0x0030, 
+    IDC_COMBO6, 0x403, 4, 0
+0x3531, 0x0031, 
+    IDC_COMBO6, 0x403, 4, 0
+0x3531, 0x0032, 
+    IDC_COMBO6, 0x403, 4, 0
+0x3531, 0x0033, 
+    IDC_COMBO6, 0x403, 4, 0
+0x3531, 0x0034, 
+    IDC_COMBO6, 0x403, 4, 0
+0x3531, 0x0035, 
+    IDC_COMBO6, 0x403, 4, 0
+0x3531, 0x0036, 
+    IDC_COMBO6, 0x403, 4, 0
+0x3531, 0x0037, 
+    IDC_COMBO6, 0x403, 4, 0
+0x3531, 0x0038, 
+    IDC_COMBO6, 0x403, 4, 0
+0x3531, 0x0039, 
+    IDC_COMBO6, 0x403, 4, 0
+0x3631, 0x0030, 
+    IDC_COMBO6, 0x403, 4, 0
+0x3631, 0x0031, 
+    IDC_COMBO6, 0x403, 4, 0
+0x3631, 0x0032, 
+    IDC_COMBO6, 0x403, 4, 0
+0x3631, 0x0033, 
+    IDC_COMBO6, 0x403, 4, 0
+0x3631, 0x0034, 
+    IDC_COMBO6, 0x403, 4, 0
+0x3631, 0x0035, 
+    IDC_COMBO6, 0x403, 4, 0
+0x3631, 0x0036, 
+    IDC_COMBO6, 0x403, 4, 0
+0x3631, 0x0037, 
+    IDC_COMBO6, 0x403, 4, 0
+0x3631, 0x0038, 
+    IDC_COMBO6, 0x403, 4, 0
+0x3631, 0x0039, 
+    IDC_COMBO6, 0x403, 4, 0
+0x3731, 0x0030, 
+    IDC_COMBO6, 0x403, 4, 0
+0x3731, 0x0031, 
+    IDC_COMBO6, 0x403, 4, 0
+0x3731, 0x0032, 
+    IDC_COMBO6, 0x403, 4, 0
+0x3731, 0x0033, 
+    IDC_COMBO6, 0x403, 4, 0
+0x3731, 0x0034, 
+    IDC_COMBO6, 0x403, 4, 0
+0x3731, 0x0035, 
+    IDC_COMBO6, 0x403, 4, 0
+0x3731, 0x0036, 
+    IDC_COMBO6, 0x403, 4, 0
+0x3731, 0x0037, 
+    IDC_COMBO6, 0x403, 4, 0
+0x3731, 0x0038, 
+    IDC_COMBO6, 0x403, 4, 0
+0x3731, 0x0039, 
+    IDC_COMBO6, 0x403, 4, 0
+0x3831, 0x0030, 
+    IDC_COMBO6, 0x403, 4, 0
+0x3831, 0x0031, 
+    IDC_COMBO6, 0x403, 4, 0
+0x3831, 0x0032, 
+    IDC_COMBO6, 0x403, 4, 0
+0x3831, 0x0033, 
+    IDC_COMBO6, 0x403, 4, 0
+0x3831, 0x0034, 
+    IDC_COMBO6, 0x403, 4, 0
+0x3831, 0x0035, 
+    IDC_COMBO6, 0x403, 4, 0
+0x3831, 0x0036, 
+    IDC_COMBO6, 0x403, 4, 0
+0x3831, 0x0037, 
+    IDC_COMBO6, 0x403, 4, 0
+0x3831, 0x0038, 
+    IDC_COMBO6, 0x403, 4, 0
+0x3831, 0x0039, 
+    IDC_COMBO6, 0x403, 4, 0
+0x3931, 0x0030, 
+    IDC_COMBO6, 0x403, 4, 0
+0x3931, 0x0031, 
+    IDC_COMBO6, 0x403, 4, 0
+0x3931, 0x0032, 
+    IDC_COMBO6, 0x403, 4, 0
+0x3931, 0x0033, 
+    IDC_COMBO6, 0x403, 4, 0
+0x3931, 0x0034, 
+    IDC_COMBO6, 0x403, 4, 0
+0x3931, 0x0035, 
+    IDC_COMBO6, 0x403, 4, 0
+0x3931, 0x0036, 
+    IDC_COMBO6, 0x403, 4, 0
+0x3931, 0x0037, 
+    IDC_COMBO6, 0x403, 4, 0
+0x3931, 0x0038, 
+    IDC_COMBO6, 0x403, 4, 0
+0x3931, 0x0039, 
+    IDC_COMBO6, 0x403, 4, 0
+0x3032, 0x0030, 
+    IDC_COMBO6, 0x403, 4, 0
+0x3032, 0x0031, 
+    IDC_COMBO6, 0x403, 4, 0
+0x3032, 0x0032, 
+    IDC_COMBO6, 0x403, 4, 0
+0x3032, 0x0033, 
+    IDC_COMBO6, 0x403, 4, 0
+0x3032, 0x0034, 
+    IDC_COMBO6, 0x403, 4, 0
+0x3032, 0x0035, 
+    IDC_COMBO6, 0x403, 4, 0
+0x3032, 0x0036, 
+    IDC_COMBO6, 0x403, 4, 0
+0x3032, 0x0037, 
+    IDC_COMBO6, 0x403, 4, 0
+0x3032, 0x0038, 
+    IDC_COMBO6, 0x403, 4, 0
+0x3032, 0x0039, 
+    IDC_COMBO6, 0x403, 4, 0
+0x3132, 0x0030, 
+    IDC_COMBO6, 0x403, 4, 0
+0x3132, 0x0031, 
+    IDC_COMBO6, 0x403, 4, 0
+0x3132, 0x0032, 
+    IDC_COMBO6, 0x403, 4, 0
+0x3132, 0x0033, 
+    IDC_COMBO6, 0x403, 4, 0
+0x3132, 0x0034, 
+    IDC_COMBO6, 0x403, 4, 0
+0x3132, 0x0035, 
+    IDC_COMBO6, 0x403, 4, 0
+0x3132, 0x0036, 
+    IDC_COMBO6, 0x403, 4, 0
+0x3132, 0x0037, 
+    IDC_COMBO6, 0x403, 4, 0
+0x3132, 0x0038, 
+    IDC_COMBO6, 0x403, 4, 0
+0x3132, 0x0039, 
+    IDC_COMBO6, 0x403, 4, 0
+0x3232, 0x0030, 
+    IDC_COMBO6, 0x403, 4, 0
+0x3232, 0x0031, 
+    IDC_COMBO6, 0x403, 4, 0
+0x3232, 0x0032, 
+    IDC_COMBO6, 0x403, 4, 0
+0x3232, 0x0033, 
+    IDC_COMBO6, 0x403, 4, 0
+0x3232, 0x0034, 
+    IDC_COMBO6, 0x403, 4, 0
+0x3232, 0x0035, 
+    IDC_COMBO6, 0x403, 4, 0
+0x3232, 0x0036, 
+    IDC_COMBO6, 0x403, 4, 0
+0x3232, 0x0037, 
+    IDC_COMBO6, 0x403, 4, 0
+0x3232, 0x0038, 
+    IDC_COMBO6, 0x403, 4, 0
+0x3232, 0x0039, 
+    IDC_COMBO6, 0x403, 4, 0
+0x3332, 0x0030, 
+    IDC_COMBO6, 0x403, 4, 0
+0x3332, 0x0031, 
+    IDC_COMBO6, 0x403, 4, 0
+0x3332, 0x0032, 
+    IDC_COMBO6, 0x403, 4, 0
+0x3332, 0x0033, 
+    IDC_COMBO6, 0x403, 4, 0
+0x3332, 0x0034, 
+    IDC_COMBO6, 0x403, 4, 0
+0x3332, 0x0035, 
+    IDC_COMBO6, 0x403, 4, 0
+0x3332, 0x0036, 
+    IDC_COMBO6, 0x403, 4, 0
+0x3332, 0x0037, 
+    IDC_COMBO6, 0x403, 4, 0
+0x3332, 0x0038, 
+    IDC_COMBO6, 0x403, 4, 0
+0x3332, 0x0039, 
+    IDC_COMBO6, 0x403, 4, 0
+0x3432, 0x0030, 
+    IDC_COMBO6, 0x403, 4, 0
+0x3432, 0x0031, 
+    IDC_COMBO6, 0x403, 4, 0
+0x3432, 0x0032, 
+    IDC_COMBO6, 0x403, 4, 0
+0x3432, 0x0033, 
+    IDC_COMBO6, 0x403, 4, 0
+0x3432, 0x0034, 
+    IDC_COMBO6, 0x403, 4, 0
+0x3432, 0x0035, 
+    IDC_COMBO6, 0x403, 4, 0
+0x3432, 0x0036, 
+    IDC_COMBO6, 0x403, 4, 0
+0x3432, 0x0037, 
+    IDC_COMBO6, 0x403, 4, 0
+0x3432, 0x0038, 
+    IDC_COMBO6, 0x403, 4, 0
+0x3432, 0x0039, 
+    IDC_COMBO6, 0x403, 4, 0
+0x3532, 0x0030, 
+    IDC_COMBO6, 0x403, 4, 0
+0x3532, 0x0031, 
+    IDC_COMBO6, 0x403, 4, 0
+0x3532, 0x0032, 
+    IDC_COMBO6, 0x403, 4, 0
+0x3532, 0x0033, 
+    IDC_COMBO6, 0x403, 4, 0
+0x3532, 0x0034, 
+    IDC_COMBO6, 0x403, 4, 0
+0x3532, 0x0035, 
+    IDC_COMBO7, 0x403, 2, 0
+0x0030, 
+    IDC_COMBO7, 0x403, 2, 0
+0x0031, 
+    IDC_COMBO7, 0x403, 2, 0
+0x0032, 
+    IDC_COMBO7, 0x403, 2, 0
+0x0033, 
+    IDC_COMBO7, 0x403, 2, 0
+0x0034, 
+    IDC_COMBO7, 0x403, 2, 0
+0x0035, 
+    IDC_COMBO7, 0x403, 2, 0
+0x0036, 
+    IDC_COMBO7, 0x403, 2, 0
+0x0037, 
+    IDC_COMBO7, 0x403, 2, 0
+0x0038, 
+    IDC_COMBO7, 0x403, 2, 0
+0x0039, 
+    IDC_COMBO7, 0x403, 3, 0
+0x3031, "\000" 
+    IDC_COMBO7, 0x403, 3, 0
+0x3131, "\000" 
+    IDC_COMBO7, 0x403, 3, 0
+0x3231, "\000" 
+    IDC_COMBO7, 0x403, 3, 0
+0x3331, "\000" 
+    IDC_COMBO7, 0x403, 3, 0
+0x3431, "\000" 
+    IDC_COMBO7, 0x403, 3, 0
+0x3531, "\000" 
+    IDC_COMBO7, 0x403, 3, 0
+0x3631, "\000" 
+    IDC_COMBO7, 0x403, 3, 0
+0x3731, "\000" 
+    IDC_COMBO7, 0x403, 3, 0
+0x3831, "\000" 
+    IDC_COMBO7, 0x403, 3, 0
+0x3931, "\000" 
+    IDC_COMBO7, 0x403, 3, 0
+0x3032, "\000" 
+    IDC_COMBO7, 0x403, 3, 0
+0x3132, "\000" 
+    IDC_COMBO7, 0x403, 3, 0
+0x3232, "\000" 
+    IDC_COMBO7, 0x403, 3, 0
+0x3332, "\000" 
+    IDC_COMBO7, 0x403, 3, 0
+0x3432, "\000" 
+    IDC_COMBO7, 0x403, 3, 0
+0x3532, "\000" 
+    IDC_COMBO7, 0x403, 3, 0
+0x3632, "\000" 
+    IDC_COMBO7, 0x403, 3, 0
+0x3732, "\000" 
+    IDC_COMBO7, 0x403, 3, 0
+0x3832, "\000" 
+    IDC_COMBO7, 0x403, 3, 0
+0x3932, "\000" 
+    IDC_COMBO7, 0x403, 3, 0
+0x3033, "\000" 
+    IDC_COMBO7, 0x403, 3, 0
+0x3133, "\000" 
+    IDC_COMBO7, 0x403, 3, 0
+0x3233, "\000" 
+    IDC_COMBO7, 0x403, 3, 0
+0x3333, "\000" 
+    IDC_COMBO7, 0x403, 3, 0
+0x3433, "\000" 
+    IDC_COMBO7, 0x403, 3, 0
+0x3533, "\000" 
+    IDC_COMBO7, 0x403, 3, 0
+0x3633, "\000" 
+    IDC_COMBO7, 0x403, 3, 0
+0x3733, "\000" 
+    IDC_COMBO7, 0x403, 3, 0
+0x3833, "\000" 
+    IDC_COMBO7, 0x403, 3, 0
+0x3933, "\000" 
+    IDC_COMBO7, 0x403, 3, 0
+0x3034, "\000" 
+    IDC_COMBO7, 0x403, 3, 0
+0x3134, "\000" 
+    IDC_COMBO7, 0x403, 3, 0
+0x3234, "\000" 
+    IDC_COMBO7, 0x403, 3, 0
+0x3334, "\000" 
+    IDC_COMBO7, 0x403, 3, 0
+0x3434, "\000" 
+    IDC_COMBO7, 0x403, 3, 0
+0x3534, "\000" 
+    IDC_COMBO7, 0x403, 3, 0
+0x3634, "\000" 
+    IDC_COMBO7, 0x403, 3, 0
+0x3734, "\000" 
+    IDC_COMBO7, 0x403, 3, 0
+0x3834, "\000" 
+    IDC_COMBO7, 0x403, 3, 0
+0x3934, "\000" 
+    IDC_COMBO7, 0x403, 3, 0
+0x3035, "\000" 
+    IDC_COMBO7, 0x403, 3, 0
+0x3135, "\000" 
+    IDC_COMBO7, 0x403, 3, 0
+0x3235, "\000" 
+    IDC_COMBO7, 0x403, 3, 0
+0x3335, "\000" 
+    IDC_COMBO7, 0x403, 3, 0
+0x3435, "\000" 
+    IDC_COMBO7, 0x403, 3, 0
+0x3535, "\000" 
+    IDC_COMBO7, 0x403, 3, 0
+0x3635, "\000" 
+    IDC_COMBO7, 0x403, 3, 0
+0x3735, "\000" 
+    IDC_COMBO7, 0x403, 3, 0
+0x3835, "\000" 
+    IDC_COMBO7, 0x403, 3, 0
+0x3935, "\000" 
+    IDC_COMBO7, 0x403, 3, 0
+0x3036, "\000" 
+    IDC_COMBO7, 0x403, 3, 0
+0x3136, "\000" 
+    IDC_COMBO7, 0x403, 3, 0
+0x3236, "\000" 
+    IDC_COMBO7, 0x403, 3, 0
+0x3336, "\000" 
+    IDC_COMBO7, 0x403, 3, 0
+0x3436, "\000" 
+    IDC_COMBO7, 0x403, 3, 0
+0x3536, "\000" 
+    IDC_COMBO7, 0x403, 3, 0
+0x3636, "\000" 
+    IDC_COMBO7, 0x403, 3, 0
+0x3736, "\000" 
+    IDC_COMBO7, 0x403, 3, 0
+0x3836, "\000" 
+    IDC_COMBO7, 0x403, 3, 0
+0x3936, "\000" 
+    IDC_COMBO7, 0x403, 3, 0
+0x3037, "\000" 
+    IDC_COMBO7, 0x403, 3, 0
+0x3137, "\000" 
+    IDC_COMBO7, 0x403, 3, 0
+0x3237, "\000" 
+    IDC_COMBO7, 0x403, 3, 0
+0x3337, "\000" 
+    IDC_COMBO7, 0x403, 3, 0
+0x3437, "\000" 
+    IDC_COMBO7, 0x403, 3, 0
+0x3537, "\000" 
+    IDC_COMBO7, 0x403, 3, 0
+0x3637, "\000" 
+    IDC_COMBO7, 0x403, 3, 0
+0x3737, "\000" 
+    IDC_COMBO7, 0x403, 3, 0
+0x3837, "\000" 
+    IDC_COMBO7, 0x403, 3, 0
+0x3937, "\000" 
+    IDC_COMBO7, 0x403, 3, 0
+0x3038, "\000" 
+    IDC_COMBO7, 0x403, 3, 0
+0x3138, "\000" 
+    IDC_COMBO7, 0x403, 3, 0
+0x3238, "\000" 
+    IDC_COMBO7, 0x403, 3, 0
+0x3338, "\000" 
+    IDC_COMBO7, 0x403, 3, 0
+0x3438, "\000" 
+    IDC_COMBO7, 0x403, 3, 0
+0x3538, "\000" 
+    IDC_COMBO7, 0x403, 3, 0
+0x3638, "\000" 
+    IDC_COMBO7, 0x403, 3, 0
+0x3738, "\000" 
+    IDC_COMBO7, 0x403, 3, 0
+0x3838, "\000" 
+    IDC_COMBO7, 0x403, 3, 0
+0x3938, "\000" 
+    IDC_COMBO7, 0x403, 3, 0
+0x3039, "\000" 
+    IDC_COMBO7, 0x403, 3, 0
+0x3139, "\000" 
+    IDC_COMBO7, 0x403, 3, 0
+0x3239, "\000" 
+    IDC_COMBO7, 0x403, 3, 0
+0x3339, "\000" 
+    IDC_COMBO7, 0x403, 3, 0
+0x3439, "\000" 
+    IDC_COMBO7, 0x403, 3, 0
+0x3539, "\000" 
+    IDC_COMBO7, 0x403, 3, 0
+0x3639, "\000" 
+    IDC_COMBO7, 0x403, 3, 0
+0x3739, "\000" 
+    IDC_COMBO7, 0x403, 3, 0
+0x3839, "\000" 
+    IDC_COMBO7, 0x403, 3, 0
+0x3939, "\000" 
+    IDC_COMBO7, 0x403, 4, 0
+0x3031, 0x0030, 
+    IDC_COMBO7, 0x403, 4, 0
+0x3031, 0x0031, 
+    IDC_COMBO7, 0x403, 4, 0
+0x3031, 0x0032, 
+    IDC_COMBO7, 0x403, 4, 0
+0x3031, 0x0033, 
+    IDC_COMBO7, 0x403, 4, 0
+0x3031, 0x0034, 
+    IDC_COMBO7, 0x403, 4, 0
+0x3031, 0x0035, 
+    IDC_COMBO7, 0x403, 4, 0
+0x3031, 0x0036, 
+    IDC_COMBO7, 0x403, 4, 0
+0x3031, 0x0037, 
+    IDC_COMBO7, 0x403, 4, 0
+0x3031, 0x0038, 
+    IDC_COMBO7, 0x403, 4, 0
+0x3031, 0x0039, 
+    IDC_COMBO7, 0x403, 4, 0
+0x3131, 0x0030, 
+    IDC_COMBO7, 0x403, 4, 0
+0x3131, 0x0031, 
+    IDC_COMBO7, 0x403, 4, 0
+0x3131, 0x0032, 
+    IDC_COMBO7, 0x403, 4, 0
+0x3131, 0x0033, 
+    IDC_COMBO7, 0x403, 4, 0
+0x3131, 0x0034, 
+    IDC_COMBO7, 0x403, 4, 0
+0x3131, 0x0035, 
+    IDC_COMBO7, 0x403, 4, 0
+0x3131, 0x0036, 
+    IDC_COMBO7, 0x403, 4, 0
+0x3131, 0x0037, 
+    IDC_COMBO7, 0x403, 4, 0
+0x3131, 0x0038, 
+    IDC_COMBO7, 0x403, 4, 0
+0x3131, 0x0039, 
+    IDC_COMBO7, 0x403, 4, 0
+0x3231, 0x0030, 
+    IDC_COMBO7, 0x403, 4, 0
+0x3231, 0x0031, 
+    IDC_COMBO7, 0x403, 4, 0
+0x3231, 0x0032, 
+    IDC_COMBO7, 0x403, 4, 0
+0x3231, 0x0033, 
+    IDC_COMBO7, 0x403, 4, 0
+0x3231, 0x0034, 
+    IDC_COMBO7, 0x403, 4, 0
+0x3231, 0x0035, 
+    IDC_COMBO7, 0x403, 4, 0
+0x3231, 0x0036, 
+    IDC_COMBO7, 0x403, 4, 0
+0x3231, 0x0037, 
+    IDC_COMBO7, 0x403, 4, 0
+0x3231, 0x0038, 
+    IDC_COMBO7, 0x403, 4, 0
+0x3231, 0x0039, 
+    IDC_COMBO7, 0x403, 4, 0
+0x3331, 0x0030, 
+    IDC_COMBO7, 0x403, 4, 0
+0x3331, 0x0031, 
+    IDC_COMBO7, 0x403, 4, 0
+0x3331, 0x0032, 
+    IDC_COMBO7, 0x403, 4, 0
+0x3331, 0x0033, 
+    IDC_COMBO7, 0x403, 4, 0
+0x3331, 0x0034, 
+    IDC_COMBO7, 0x403, 4, 0
+0x3331, 0x0035, 
+    IDC_COMBO7, 0x403, 4, 0
+0x3331, 0x0036, 
+    IDC_COMBO7, 0x403, 4, 0
+0x3331, 0x0037, 
+    IDC_COMBO7, 0x403, 4, 0
+0x3331, 0x0038, 
+    IDC_COMBO7, 0x403, 4, 0
+0x3331, 0x0039, 
+    IDC_COMBO7, 0x403, 4, 0
+0x3431, 0x0030, 
+    IDC_COMBO7, 0x403, 4, 0
+0x3431, 0x0031, 
+    IDC_COMBO7, 0x403, 4, 0
+0x3431, 0x0032, 
+    IDC_COMBO7, 0x403, 4, 0
+0x3431, 0x0033, 
+    IDC_COMBO7, 0x403, 4, 0
+0x3431, 0x0034, 
+    IDC_COMBO7, 0x403, 4, 0
+0x3431, 0x0035, 
+    IDC_COMBO7, 0x403, 4, 0
+0x3431, 0x0036, 
+    IDC_COMBO7, 0x403, 4, 0
+0x3431, 0x0037, 
+    IDC_COMBO7, 0x403, 4, 0
+0x3431, 0x0038, 
+    IDC_COMBO7, 0x403, 4, 0
+0x3431, 0x0039, 
+    IDC_COMBO7, 0x403, 4, 0
+0x3531, 0x0030, 
+    IDC_COMBO7, 0x403, 4, 0
+0x3531, 0x0031, 
+    IDC_COMBO7, 0x403, 4, 0
+0x3531, 0x0032, 
+    IDC_COMBO7, 0x403, 4, 0
+0x3531, 0x0033, 
+    IDC_COMBO7, 0x403, 4, 0
+0x3531, 0x0034, 
+    IDC_COMBO7, 0x403, 4, 0
+0x3531, 0x0035, 
+    IDC_COMBO7, 0x403, 4, 0
+0x3531, 0x0036, 
+    IDC_COMBO7, 0x403, 4, 0
+0x3531, 0x0037, 
+    IDC_COMBO7, 0x403, 4, 0
+0x3531, 0x0038, 
+    IDC_COMBO7, 0x403, 4, 0
+0x3531, 0x0039, 
+    IDC_COMBO7, 0x403, 4, 0
+0x3631, 0x0030, 
+    IDC_COMBO7, 0x403, 4, 0
+0x3631, 0x0031, 
+    IDC_COMBO7, 0x403, 4, 0
+0x3631, 0x0032, 
+    IDC_COMBO7, 0x403, 4, 0
+0x3631, 0x0033, 
+    IDC_COMBO7, 0x403, 4, 0
+0x3631, 0x0034, 
+    IDC_COMBO7, 0x403, 4, 0
+0x3631, 0x0035, 
+    IDC_COMBO7, 0x403, 4, 0
+0x3631, 0x0036, 
+    IDC_COMBO7, 0x403, 4, 0
+0x3631, 0x0037, 
+    IDC_COMBO7, 0x403, 4, 0
+0x3631, 0x0038, 
+    IDC_COMBO7, 0x403, 4, 0
+0x3631, 0x0039, 
+    IDC_COMBO7, 0x403, 4, 0
+0x3731, 0x0030, 
+    IDC_COMBO7, 0x403, 4, 0
+0x3731, 0x0031, 
+    IDC_COMBO7, 0x403, 4, 0
+0x3731, 0x0032, 
+    IDC_COMBO7, 0x403, 4, 0
+0x3731, 0x0033, 
+    IDC_COMBO7, 0x403, 4, 0
+0x3731, 0x0034, 
+    IDC_COMBO7, 0x403, 4, 0
+0x3731, 0x0035, 
+    IDC_COMBO7, 0x403, 4, 0
+0x3731, 0x0036, 
+    IDC_COMBO7, 0x403, 4, 0
+0x3731, 0x0037, 
+    IDC_COMBO7, 0x403, 4, 0
+0x3731, 0x0038, 
+    IDC_COMBO7, 0x403, 4, 0
+0x3731, 0x0039, 
+    IDC_COMBO7, 0x403, 4, 0
+0x3831, 0x0030, 
+    IDC_COMBO7, 0x403, 4, 0
+0x3831, 0x0031, 
+    IDC_COMBO7, 0x403, 4, 0
+0x3831, 0x0032, 
+    IDC_COMBO7, 0x403, 4, 0
+0x3831, 0x0033, 
+    IDC_COMBO7, 0x403, 4, 0
+0x3831, 0x0034, 
+    IDC_COMBO7, 0x403, 4, 0
+0x3831, 0x0035, 
+    IDC_COMBO7, 0x403, 4, 0
+0x3831, 0x0036, 
+    IDC_COMBO7, 0x403, 4, 0
+0x3831, 0x0037, 
+    IDC_COMBO7, 0x403, 4, 0
+0x3831, 0x0038, 
+    IDC_COMBO7, 0x403, 4, 0
+0x3831, 0x0039, 
+    IDC_COMBO7, 0x403, 4, 0
+0x3931, 0x0030, 
+    IDC_COMBO7, 0x403, 4, 0
+0x3931, 0x0031, 
+    IDC_COMBO7, 0x403, 4, 0
+0x3931, 0x0032, 
+    IDC_COMBO7, 0x403, 4, 0
+0x3931, 0x0033, 
+    IDC_COMBO7, 0x403, 4, 0
+0x3931, 0x0034, 
+    IDC_COMBO7, 0x403, 4, 0
+0x3931, 0x0035, 
+    IDC_COMBO7, 0x403, 4, 0
+0x3931, 0x0036, 
+    IDC_COMBO7, 0x403, 4, 0
+0x3931, 0x0037, 
+    IDC_COMBO7, 0x403, 4, 0
+0x3931, 0x0038, 
+    IDC_COMBO7, 0x403, 4, 0
+0x3931, 0x0039, 
+    IDC_COMBO7, 0x403, 4, 0
+0x3032, 0x0030, 
+    IDC_COMBO7, 0x403, 4, 0
+0x3032, 0x0031, 
+    IDC_COMBO7, 0x403, 4, 0
+0x3032, 0x0032, 
+    IDC_COMBO7, 0x403, 4, 0
+0x3032, 0x0033, 
+    IDC_COMBO7, 0x403, 4, 0
+0x3032, 0x0034, 
+    IDC_COMBO7, 0x403, 4, 0
+0x3032, 0x0035, 
+    IDC_COMBO7, 0x403, 4, 0
+0x3032, 0x0036, 
+    IDC_COMBO7, 0x403, 4, 0
+0x3032, 0x0037, 
+    IDC_COMBO7, 0x403, 4, 0
+0x3032, 0x0038, 
+    IDC_COMBO7, 0x403, 4, 0
+0x3032, 0x0039, 
+    IDC_COMBO7, 0x403, 4, 0
+0x3132, 0x0030, 
+    IDC_COMBO7, 0x403, 4, 0
+0x3132, 0x0031, 
+    IDC_COMBO7, 0x403, 4, 0
+0x3132, 0x0032, 
+    IDC_COMBO7, 0x403, 4, 0
+0x3132, 0x0033, 
+    IDC_COMBO7, 0x403, 4, 0
+0x3132, 0x0034, 
+    IDC_COMBO7, 0x403, 4, 0
+0x3132, 0x0035, 
+    IDC_COMBO7, 0x403, 4, 0
+0x3132, 0x0036, 
+    IDC_COMBO7, 0x403, 4, 0
+0x3132, 0x0037, 
+    IDC_COMBO7, 0x403, 4, 0
+0x3132, 0x0038, 
+    IDC_COMBO7, 0x403, 4, 0
+0x3132, 0x0039, 
+    IDC_COMBO7, 0x403, 4, 0
+0x3232, 0x0030, 
+    IDC_COMBO7, 0x403, 4, 0
+0x3232, 0x0031, 
+    IDC_COMBO7, 0x403, 4, 0
+0x3232, 0x0032, 
+    IDC_COMBO7, 0x403, 4, 0
+0x3232, 0x0033, 
+    IDC_COMBO7, 0x403, 4, 0
+0x3232, 0x0034, 
+    IDC_COMBO7, 0x403, 4, 0
+0x3232, 0x0035, 
+    IDC_COMBO7, 0x403, 4, 0
+0x3232, 0x0036, 
+    IDC_COMBO7, 0x403, 4, 0
+0x3232, 0x0037, 
+    IDC_COMBO7, 0x403, 4, 0
+0x3232, 0x0038, 
+    IDC_COMBO7, 0x403, 4, 0
+0x3232, 0x0039, 
+    IDC_COMBO7, 0x403, 4, 0
+0x3332, 0x0030, 
+    IDC_COMBO7, 0x403, 4, 0
+0x3332, 0x0031, 
+    IDC_COMBO7, 0x403, 4, 0
+0x3332, 0x0032, 
+    IDC_COMBO7, 0x403, 4, 0
+0x3332, 0x0033, 
+    IDC_COMBO7, 0x403, 4, 0
+0x3332, 0x0034, 
+    IDC_COMBO7, 0x403, 4, 0
+0x3332, 0x0035, 
+    IDC_COMBO7, 0x403, 4, 0
+0x3332, 0x0036, 
+    IDC_COMBO7, 0x403, 4, 0
+0x3332, 0x0037, 
+    IDC_COMBO7, 0x403, 4, 0
+0x3332, 0x0038, 
+    IDC_COMBO7, 0x403, 4, 0
+0x3332, 0x0039, 
+    IDC_COMBO7, 0x403, 4, 0
+0x3432, 0x0030, 
+    IDC_COMBO7, 0x403, 4, 0
+0x3432, 0x0031, 
+    IDC_COMBO7, 0x403, 4, 0
+0x3432, 0x0032, 
+    IDC_COMBO7, 0x403, 4, 0
+0x3432, 0x0033, 
+    IDC_COMBO7, 0x403, 4, 0
+0x3432, 0x0034, 
+    IDC_COMBO7, 0x403, 4, 0
+0x3432, 0x0035, 
+    IDC_COMBO7, 0x403, 4, 0
+0x3432, 0x0036, 
+    IDC_COMBO7, 0x403, 4, 0
+0x3432, 0x0037, 
+    IDC_COMBO7, 0x403, 4, 0
+0x3432, 0x0038, 
+    IDC_COMBO7, 0x403, 4, 0
+0x3432, 0x0039, 
+    IDC_COMBO7, 0x403, 4, 0
+0x3532, 0x0030, 
+    IDC_COMBO7, 0x403, 4, 0
+0x3532, 0x0031, 
+    IDC_COMBO7, 0x403, 4, 0
+0x3532, 0x0032, 
+    IDC_COMBO7, 0x403, 4, 0
+0x3532, 0x0033, 
+    IDC_COMBO7, 0x403, 4, 0
+0x3532, 0x0034, 
+    IDC_COMBO7, 0x403, 4, 0
+0x3532, 0x0035, 
+    0
+END
+
+IDD_EDITLAYERIMAGE DLGINIT
+BEGIN
+    IDC_COMBO1, 0x403, 2, 0
+0x0030, 
+    IDC_COMBO1, 0x403, 2, 0
+0x0031, 
+    IDC_COMBO1, 0x403, 2, 0
+0x0032, 
+    IDC_COMBO1, 0x403, 2, 0
+0x0033, 
+    IDC_COMBO1, 0x403, 2, 0
+0x0034, 
+    IDC_COMBO1, 0x403, 2, 0
+0x0035, 
+    IDC_COMBO1, 0x403, 2, 0
+0x0036, 
+    IDC_COMBO1, 0x403, 2, 0
+0x0037, 
+    IDC_COMBO1, 0x403, 23, 0
+0x2038, 0x8320, 0x8381, 0x8362, 0x815a, 0x835b, 0x8357, 0x837b, 0x8362, 
+0x834e, 0x3058, "\000" 
+    IDC_COMBO1, 0x403, 23, 0
+0x2039, 0x8320, 0x8381, 0x8362, 0x815a, 0x835b, 0x8357, 0x837b, 0x8362, 
+0x834e, 0x3158, "\000" 
+    IDC_COMBO1, 0x403, 23, 0
+0x3031, 0x8320, 0x8381, 0x8362, 0x815a, 0x835b, 0x8357, 0x837b, 0x8362, 
+0x834e, 0x3258, "\000" 
+    IDC_COMBO1, 0x403, 23, 0
+0x3131, 0x8320, 0x8381, 0x8362, 0x815a, 0x835b, 0x8357, 0x837b, 0x8362, 
+0x834e, 0x3358, "\000" 
+    IDC_COMBO1, 0x403, 23, 0
+0x3231, 0x8320, 0x8381, 0x8362, 0x815a, 0x835b, 0x8357, 0x837b, 0x8362, 
+0x834e, 0x3458, "\000" 
+    IDC_COMBO1, 0x403, 23, 0
+0x3331, 0x8320, 0x8381, 0x8362, 0x815a, 0x835b, 0x8357, 0x837b, 0x8362, 
+0x834e, 0x3558, "\000" 
+    IDC_COMBO1, 0x403, 23, 0
+0x3431, 0x8320, 0x8381, 0x8362, 0x815a, 0x835b, 0x8357, 0x837b, 0x8362, 
+0x834e, 0x3658, "\000" 
+    IDC_COMBO1, 0x403, 23, 0
+0x3531, 0x8320, 0x8381, 0x8362, 0x815a, 0x835b, 0x8357, 0x837b, 0x8362, 
+0x834e, 0x3758, "\000" 
+    IDC_COMBO1, 0x403, 14, 0
+0x3631, 0x9220, 0x8986, 0x839b, 0x834c, 0x8383, 0x0089, 
+    IDC_COMBO1, 0x403, 32, 0
+0x3731, 0x2820, 0x4e83, 0x8d83, 0x5883, 0x7483, 0x4683, 0x5b81, 0x6883, 
+0x7097, 0xc982, 0x5c97, 0xf196, 0xcf8d, 0xdd82, 0x0029, 
+    IDC_COMBO1, 0x403, 3, 0
+0x3831, "\000" 
+    IDC_COMBO1, 0x403, 12, 0
+0x3931, 0x8920, 0x8345, 0x834c, 0x8383, 0x0089, 
+    IDC_COMBO1, 0x403, 32, 0
+0x3032, 0x2820, 0x4e83, 0x8d83, 0x5883, 0x7483, 0x4683, 0x5b81, 0x6883, 
+0x7097, 0xc982, 0x5c97, 0xf196, 0xcf8d, 0xdd82, 0x0029, 
+    IDC_COMBO1, 0x403, 3, 0
+0x3132, "\000" 
+    IDC_COMBO1, 0x403, 12, 0
+0x3232, 0x8d20, 0x83b6, 0x834c, 0x8383, 0x0089, 
+    IDC_COMBO1, 0x403, 32, 0
+0x3332, 0x2820, 0x4e83, 0x8d83, 0x5883, 0x7483, 0x4683, 0x5b81, 0x6883, 
+0x7097, 0xc982, 0x5c97, 0xf196, 0xcf8d, 0xdd82, 0x0029, 
+    IDC_COMBO1, 0x403, 3, 0
+0x3432, "\000" 
+    IDC_COMBO1, 0x403, 8, 0
+0x3532, 0x9420, 0x8c77, 0x0069, 
+    IDC_COMBO1, 0x403, 32, 0
+0x3632, 0x2820, 0x4e83, 0x8d83, 0x5883, 0x7483, 0x4683, 0x5b81, 0x6883, 
+0x7097, 0xc982, 0x5c97, 0xf196, 0xcf8d, 0xdd82, 0x0029, 
+    IDC_COMBO1, 0x403, 3, 0
+0x3732, "\000" 
+    IDC_COMBO1, 0x403, 3, 0
+0x3832, "\000" 
+    IDC_COMBO1, 0x403, 3, 0
+0x3932, "\000" 
+    IDC_COMBO1, 0x403, 3, 0
+0x3033, "\000" 
+    IDC_COMBO1, 0x403, 3, 0
+0x3133, "\000" 
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_INSERT_INSTR_MSG     "セリフやナレーションを表示する命令です。ボイスも再生できます"
+    ID_INSERT_INSTR_BKGRND  "背景画像を表示する命令です。フェードイン，フェードアウト，クロスフェードできます"
+    ID_INSERT_INSTR_CHARA   "キャラ画像を表示する命令です。フェードイン，フェードアウト，クロスフェードできます"
+    ID_INSERT_INSTR_SOUND   "ＢＧＭ，ＳＥとしてサウンドを再生する命令です"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_INSERT_INSTR_SELECT  "選択肢を表示して，選択に応じてシナリオを分岐させる命令です"
+    ID_INSERT_INSTR_SETVAR  "変数に値をセットする命令です"
+    ID_INSERT_INSTR_CHECKVAR "変数の値に応じてシナリオを分岐させる命令です"
+    ID_INSERT_INSTR_LOOP    "シナリオのループを作成します"
+    ID_INSERT_INSTR_BREAK   "ループから脱出する命令です。ループの中でしか使えません"
+    ID_INSERT_INSTR_EXTENDED 
+                            "スクリプト式の拡張命令です。システムをカスタマイズできます"
+    ID_INSERT_INSTR_COMMENT "シーンファイルを読みやすくするためのコメントを挿入します"
+END
+
+#endif    // 日本語 resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
